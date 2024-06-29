@@ -8,29 +8,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/heroicons@2.0.18/24/solid/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
   <body class="bg-gray-100 font-sans">
-    <header class="bg-white shadow">
-      <nav class="container mx-auto px-4 py-3 sm:px-6">
-        <div class="flex flex-col items-center justify-between sm:flex-row">
-          <div class="flex items-center">
-            <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="w-20" />
-            <div class="font-roboto mb-4 text-xl font-bold italic text-[#333333] sm:mb-0">Field Rocket</div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="w-12" />
+              <span class="text-xl font-bold text-gray-800">Field Rocket</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+              <a href="#about" class="text-gray-600 hover:text-red-600 transition">About</a>
+              <a href="#benefits" class="text-gray-600 hover:text-red-600 transition">Benefits</a>
+              <a href="#faq" class="text-gray-600 hover:text-red-600 transition">FAQ</a>
+              <a href="https://fieldrocket.com" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition">Get Your Free Website</a>
+            </div>
           </div>
-          <div class="flex flex-wrap items-center justify-center space-x-2 sm:space-x-4">
-            <a href="#about" class="mb-2 text-gray-600 hover:text-red-600 sm:mb-0">About</a>
-            <a href="#benefits" class="mb-2 text-gray-600 hover:text-red-600 sm:mb-0">Benefits</a>
-            <a href="#faq" class="mb-2 text-gray-600 hover:text-red-600 sm:mb-0">FAQ</a>
-            <a href="https://fieldrocket.com" class="rounded bg-red-600 px-4 py-2 text-white hover:bg-red-700">Get Your Free Website</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <div class="w-full bg-white py-8 mt-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-1/2">
+                <div class="md:w-1/2" data-aos="fade-right">
                     <h1 class="text-5xl font-bold mb-6">Launch, Grow, & Manage Your Service Business with Our Free App</h1>
                     <ul class="space-y-4 mb-6">
                         <li class="flex items-center text-2xl ">
@@ -51,7 +53,7 @@
                         GET STARTED HERE
                     </button>
                 </div>
-                <div class="md:w-1/2">
+                <div class="md:w-1/2" data-aos="fade-left">
                     <img src="https://fieldrocket.us/wp-content/uploads/2023/02/fieldrocket-header-ken-van-1152x1536.png" alt="Service professional using app" class="w-full rounded-lg shadow-lg" />
                     <p class="text-sm mt-2">Ken Kendall<br>Perform Heating & Cooling - Bountiful, UT</p>
                 </div>
@@ -60,11 +62,11 @@
     </div>
     <hr class="my-8 border-t-2 border-gray-400">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-3xl font-bold mb-8 text-center">How Field Rocket Lands You New Jobs:</h1>
+            <h1 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">How Field Rocket Lands You New Jobs:</h1>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Step 1 -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <h2 class="text-xl font-semibold mb-2">STEP 1:</h2>
                     <p class="mb-4">Invoice Your Jobs, Describe Your Work</p>
                     <div class="rounded-3xl p-4 inline-block">
@@ -73,7 +75,7 @@
                 </div>
                 
                 <!-- Step 2 -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <h2 class="text-xl font-semibold mb-2">STEP 2:</h2>
                     <p class="mb-4">Upload & Attach Pictures of Your Jobs</p>
                     <div class="rounded-3xl p-4 inline-block">
@@ -82,7 +84,7 @@
                 </div>
                 
                 <!-- Step 3 -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <h2 class="text-xl font-semibold mb-2">STEP 3:</h2>
                     <p class="mb-4">Publish These Pictures & Jobs Online</p>
                     <div class="rounded-3xl p-4 inline-block">
@@ -91,7 +93,7 @@
                 </div>
                 
                 <!-- Step 4 -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="400">
                     <h2 class="text-xl font-semibold mb-2">STEP 4:</h2>
                     <p class="mb-4">Build Your Portfolio & Get New Leads</p>
                     <div class="rounded-3xl p-4 inline-block">
@@ -100,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center">
+        <div class="text-center" data-aos="fade-up">
             <p class="text-lg font-bold mb-2">READY TO GROW?</p>
             <button class="bg-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300 w-64">
                 GET STARTED HERE
@@ -117,7 +119,7 @@
                 <p class="text-xl text-[#333333] italic mb-4">Everything has come a million miles from where it was before Field Rocket. Back in the day, there was a lot of manual entry, and now with our business doubling in size, roughly 100% from last year, Field Rocket has made things WAY easier.</p>
                 <div class="flex items-center">
                   <div class="flex text-yellow-400 mr-2">
-                    ★★★★★
+                    ★★��★★
                   </div>
                   <p class="font-bold text-[#333333]">Trevor Taylor, Utah Tree Co</p>
                 </div>
@@ -141,21 +143,12 @@
             </div>
           </div>
 
-          <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Stories</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 p-8">
     <div class="max-w-4xl mx-auto">
-        <h1 class="text-3xl font-bold mb-8 text-center">Success Stories:</h1>
+        <h1 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">Success Stories:</h1>
         
         <div class="space-y-8">
             <!-- Stump Grinding Business -->
-            <div class="p-6 rounded-lg flex flex-col md:flex-row items-center gap-6">
+            <div class="p-6 rounded-lg flex flex-col md:flex-row items-center gap-6" data-aos="fade-right">
                 <img src="https://fieldrocket.us/wp-content/uploads/2023/10/utah-stumpx-sandy-lehi-stump-removal-1024x563.jpeg" alt="Stump Professional Stump Grinding Logo" class="w-96 h-auto rounded-lg"/>
                 <div>
                     <a href="#" class="text-blue-500 underline text-xl md:text-2xl font-bold">
@@ -165,7 +158,7 @@
             </div>
 
             <!-- Pool Diving Business -->
-            <div class="p-6 rounded-lg flex flex-col md:flex-row-reverse items-center gap-6">
+            <div class="p-6 rounded-lg flex flex-col md:flex-row-reverse items-center gap-6" data-aos="fade-left">
                 <img src="https://fieldrocket.us/wp-content/uploads/2024/02/cincinnati-pool-divers-fieldrocket-logo-1024x1024.png" alt="Cincinnati Pool Divers Logo" class="w-72 h-auto rounded-lg"/>
                 <div>
                     <a href="#" class="text-blue-500 underline text-xl md:text-2xl font-bold">
@@ -175,7 +168,7 @@
             </div>
 
             <!-- HVAC Business -->
-            <div class="p-6 rounded-lg flex flex-col md:flex-row items-center gap-6">
+            <div class="p-6 rounded-lg flex flex-col md:flex-row items-center gap-6" data-aos="fade-right">
                 <img src="https://fieldrocket.us/wp-content/uploads/2024/02/river-air-van-background-removed.png" alt="River Air LLC Van" class="w-96 h-auto"/>
                 <div>
                     <a href="#" class="text-blue-500 underline text-xl md:text-2xl font-bold">
@@ -185,8 +178,6 @@
             </div>
         </div>
     </div>
-</body>
-</html>
 
     <footer class="bg-gray-800 py-6 text-white sm:py-8">
       <div class="container mx-auto px-4 text-center sm:px-6">
@@ -198,5 +189,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+          duration: 1000,
+          once: true,
+          offset: 100
+        });
+      });
+    </script>
   </body>
 </html>
