@@ -26,13 +26,24 @@
     </header>
 
     <main>
-        <section class="bg-blue-800 text-white py-16">
-            <div class="container mx-auto px-4">
-                <h1 class="text-4xl font-bold mb-4">Charleston Auto Glass Replacement</h1>
-                <p class="mb-8">Welcome to Mission Auto Glass in Charleston, SC, where we combine excellence in auto glass services with a steadfast commitment to safety, satisfaction, and the seamless functionality of your vehicle.</p>
-                <button class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700">REQUEST ESTIMATE</button>
+        <div class="relative h-screen overflow-hidden">
+            <!-- Skewed background -->
+            <div class="absolute inset-0 flex bg-blue-700">
+              <div class="w-1/3 bg-black transform -skew-x-[20deg] scale-110 origin-top-left"></div>
+              <div class="w-1/3 bg-blue-700 transform -skew-x-[20deg] scale-110 translate-x-10 origin-top"></div>
+              <div class="w-1/3 bg-red-600 transform -skew-x-[20deg] scale-110 translate-x-20 origin-top-right"></div>
             </div>
-        </section>
+            
+            <!-- Content overlay -->
+            <div class="relative z-10 h-full flex items-center justify-center">
+              <div class="container mx-auto px-4 text-white">
+                <h1 class="text-4xl font-bold mb-4">Charleston Auto Glass Replacement</h1>
+                <p class="mb-8 max-w-2xl">Welcome to Mission Auto Glass in Charleston, SC, where we combine excellence in auto glass services with a steadfast commitment to safety, satisfaction, and the seamless functionality of your vehicle.</p>
+                <button class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">REQUEST ESTIMATE</button>
+              </div>
+            </div>
+          </div>
+          
 
         <section class="py-16 bg-gradient-to-r from-blue-800 to-red-600">
             <div class="container mx-auto px-4 flex items-center">
