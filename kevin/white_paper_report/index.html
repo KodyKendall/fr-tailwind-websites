@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS Transportation Services Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <h1 class="text-2xl font-bold mb-6 text-center">Mobility Transportation Services (MTS) State and Federally Regulated Form</h1>
+        
+        <form>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="day">Day:</label>
+                    <input type="text" id="day" name="day" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="date">Date:</label>
+                    <input type="date" id="date" name="date" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="clientName">Client Name:</label>
+                    <input type="text" id="clientName" name="clientName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="clientSignature">Signature:</label>
+                    <input type="text" id="clientSignature" name="clientSignature" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700" for="address">Address:</label>
+                <input type="text" id="address" name="address" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="driverName">Driver Name:</label>
+                    <input type="text" id="driverName" name="driverName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="driverSignature">Signature:</label>
+                    <input type="text" id="driverSignature" name="driverSignature" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Facility Checkout:</label>
+                    <div class="mt-2">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="facilityCheckoutList" class="form-checkbox h-5 w-5 text-blue-600">
+                            <span class="ml-2 text-sm text-gray-700">List</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="facilityCheckoutCreditCard" class="form-checkbox h-5 w-5 text-blue-600">
+                            <span class="ml-2 text-sm text-gray-700">Credit Card</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" name="facilityCheckoutMoneyReceived" class="form-checkbox h-5 w-5 text-blue-600">
+                            <span class="ml-2 text-sm text-gray-700">Money Received</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="facilityCheckoutSignature">Signature:</label>
+                    <input type="text" id="facilityCheckoutSignature" name="facilityCheckoutSignature" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="facilityCheckoutPrintedName">Printed Name:</label>
+                    <input type="text" id="facilityCheckoutPrintedName" name="facilityCheckoutPrintedName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="facilityCheckIn" class="form-checkbox h-5 w-5 text-blue-600">
+                    <span class="ml-2 text-sm text-gray-700">Facility Check In: Items/Receipts</span>
+                </label>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="facilityCheckInSignature">Signature:</label>
+                    <input type="text" id="facilityCheckInSignature" name="facilityCheckInSignature" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="facilityCheckInPrintedName">Printed Name:</label>
+                    <input type="text" id="facilityCheckInPrintedName" name="facilityCheckInPrintedName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="changeCreditCard" class="form-checkbox h-5 w-5 text-blue-600">
+                    <span class="ml-2 text-sm text-gray-700">Change/Credit Card</span>
+                </label>
+            </div>
+            
+            <table class="w-full border-collapse border border-gray-300 mb-4">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="border border-gray-300 p-2">Start Time</th>
+                        <th class="border border-gray-300 p-2">End Time</th>
+                        <th class="border border-gray-300 p-2">Total Time</th>
+                        <th class="border border-gray-300 p-2">Mileage</th>
+                        <th class="border border-gray-300 p-2">Destination</th>
+                        <th class="border border-gray-300 p-2">Attended Care Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-gray-300 p-2"><input type="time" name="startTime1" class="w-full"></td>
+                        <td class="border border-gray-300 p-2"><input type="time" name="endTime1" class="w-full"></td>
+                        <td class="border border-gray-300 p-2"><input type="text" name="totalTime1" class="w-full"></td>
+                        <td class="border border-gray-300 p-2"><input type="number" name="mileage1" class="w-full"></td>
+                        <td class="border border-gray-300 p-2"><input type="text" name="destination1" class="w-full"></td>
+                        <td class="border border-gray-300 p-2"><input type="text" name="careNotes1" class="w-full"></td>
+                    </tr>
+                    <!-- Repeat the above <tr> block 6 more times for a total of 7 rows -->
+                </tbody>
+            </table>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="totalRides">TOTAL RIDES:</label>
+                    <input type="number" id="totalRides" name="totalRides" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700" for="totalAttendedCare">TOTAL ATTENDED CARE:</label>
+                    <input type="text" id="totalAttendedCare" name="totalAttendedCare" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-6 mt-10">
+        <h2 class="text-xl font-semibold mb-4">Signature Pad</h2>
+        <canvas id="signatureCanvas" class="mb-4" width="400" height="200"></canvas>
+        <div class="flex space-x-4">
+            <button id="clearButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Clear
+            </button>
+            <button id="saveButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Save
+            </button>
+        </div>    
+        <script>
+            class SignaturePad {
+                constructor(canvasId) {
+                    this.canvas = document.getElementById(canvasId);
+                    this.ctx = this.canvas.getContext('2d');
+                    this.isDrawing = false;
+                    this.setupEventListeners();
+                }
+    
+                setupEventListeners() {
+                    this.canvas.addEventListener('mousedown', this.startDrawing.bind(this));
+                    this.canvas.addEventListener('mousemove', this.draw.bind(this));
+                    this.canvas.addEventListener('mouseup', this.stopDrawing.bind(this));
+                    this.canvas.addEventListener('mouseout', this.stopDrawing.bind(this));
+    
+                    // Touch events for mobile devices
+                    this.canvas.addEventListener('touchstart', this.startDrawing.bind(this));
+                    this.canvas.addEventListener('touchmove', this.draw.bind(this));
+                    this.canvas.addEventListener('touchend', this.stopDrawing.bind(this));
+                }
+    
+                startDrawing(e) {
+                    this.isDrawing = true;
+                    this.draw(e);
+                }
+    
+                draw(e) {
+                    if (!this.isDrawing) return;
+    
+                    e.preventDefault();
+                    const rect = this.canvas.getBoundingClientRect();
+                    const x = (e.clientX || e.touches[0].clientX) - rect.left;
+                    const y = (e.clientY || e.touches[0].clientY) - rect.top;
+    
+                    this.ctx.lineWidth = 2;
+                    this.ctx.lineCap = 'round';
+                    this.ctx.lineTo(x, y);
+                    this.ctx.stroke();
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(x, y);
+                }
+    
+                stopDrawing() {
+                    this.isDrawing = false;
+                    this.ctx.beginPath();
+                }
+    
+                clear() {
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                }
+    
+                save() {
+                    return this.canvas.toDataURL();
+                }
+            }
+    
+            // Initialize the signature pad
+            const signaturePad = new SignaturePad('signatureCanvas');
+    
+            // Set up button event listeners
+            document.getElementById('clearButton').addEventListener('click', () => signaturePad.clear());
+            document.getElementById('saveButton').addEventListener('click', () => {
+                const dataUrl = signaturePad.save();
+                console.log('Signature saved:', dataUrl);
+                // You can send this dataUrl to your server or use it as needed
+            });
+        </script>        
+</body>
+</html>

@@ -1,0 +1,1709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Rockets</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="min-h-screen bg-slate-50 dakr:bg-black dark:text-white">
+    <!-- <header class="bg-teal-700 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        Hello, World!
+      </section>
+    </header> -->
+    <header class="flex items-center justify-between flex-wrap bg-gray-800 p-6 sticky top-0 z-10">
+      <div class="flex items-center flex-shrink-0 text-white mr-6 ">
+        <span class="font-semibold text-xl tracking-tight">My Website</span>
+      </div>
+    
+      <div class="block lg:hidden">
+        <button onclick="toggleMenu()" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+    
+      <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
+        <div class="text-sm lg:flex-grow">
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">Home</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">About</a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">Contact</a>
+        </div>
+      </div>
+    </header>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://picsum.photos/720/400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://picsum.photos/720/400" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3">
+        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://picsum.photos/722/402" alt="blog">
+          <div class="p-6">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            <div class="flex items-center flex-wrap ">
+              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="https://picsum.photos/300/200" alt="Random image">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">Card Title</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut.
+    </p>
+  </div>
+  <div class="px-6 py-4">
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#travel</span>
+  </div>
+</div>
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+  Click me
+</button>
+
+<div class="flex flex-row h-screen antialiased text-gray-800">
+  <div class="flex flex-row w-96 flex-shrink-0 bg-gray-100 p-4">
+    <div class="flex flex-col items-center py-4 flex-shrink-0 w-20 bg-indigo-800 rounded-3xl">
+      <a href="#"
+         class="flex items-center justify-center h-12 w-12 bg-indigo-100 text-indigo-800 rounded-full">
+        <svg class="w-8 h-8"
+             fill="none"
+             stroke="currentColor"
+             viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+        </svg>
+      </a>
+      <ul class="flex flex-col space-y-2 mt-12">
+        <li>
+          <a href="#"
+             class="flex items-center">
+            <span class="flex items-center justify-center text-indigo-100 hover:bg-indigo-700 h-12 w-12 rounded-2xl">
+              <svg class="w-6 h-6"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+             class="flex items-center">
+            <span class="flex items-center justify-center text-indigo-100 hover:bg-indigo-700 h-12 w-12 rounded-2xl">
+              <svg class="w-6 h-6"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+             class="flex items-center">
+            <span class="flex items-center justify-center text-indigo-100 hover:bg-indigo-700 h-12 w-12 rounded-2xl">
+              <svg class="w-6 h-6"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+             class="flex items-center">
+            <span class="flex items-center justify-center text-indigo-100 hover:bg-indigo-700 h-12 w-12 rounded-2xl">
+              <svg class="w-6 h-6"
+                   fill="none"
+                   stroke="currentColor"
+                   viewBox="0 0 24 24"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <button class="mt-auto flex items-center justify-center hover:text-indigo-100 text-indigo-500 h-10 w-10">
+        <svg class="w-6 h-6"
+             fill="none"
+             stroke="currentColor"
+             viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="flex flex-col w-full h-full pl-4 pr-4 py-4 -mr-4">
+      <div class="flex flex-row items-center">
+        <div class="flex flex-row items-center">
+          <div class="text-xl font-semibold">Messages</div>
+          <div class="flex items-center justify-center ml-2 text-xs h-5 w-5 text-white bg-red-500 rounded-full font-medium">5</div>
+        </div>
+        <div class="ml-auto">
+          <button class="flex items-center justify-center h-7 w-7 bg-gray-200 text-gray-500 rounded-full">
+            <svg class="w-4 h-4 stroke-current"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mt-5">
+        <ul class="flex flex-row items-center justify-between">
+          <li>
+            <a href="#"
+               class="flex items-center pb-3 text-xs font-semibold relative text-indigo-800">
+              <span>All Conversations</span>
+              <span class="absolute left-0 bottom-0 h-1 w-6 bg-indigo-800 rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="flex items-center pb-3 text-xs text-gray-700 font-semibold">
+              <span>Archived</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="flex items-center pb-3 text-xs text-gray-700 font-semibold">
+              <span>Starred</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-5">
+        <div class="text-xs text-gray-400 font-semibold uppercase">Team</div>
+      </div>
+      <div class="mt-2">
+        <div class="flex flex-col -mx-4">
+          <div class="relative flex flex-row items-center p-4">
+            <div class="absolute text-xs text-gray-500 right-0 top-0 mr-4 mt-3">5 min</div>
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="text-sm font-medium">Cuberto</div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+            <div class="flex-shrink-0 ml-2 self-end mb-1">
+              <span class="flex items-center justify-center h-5 w-5 bg-red-500 text-white text-xs rounded-full">5</span>
+            </div>
+          </div>
+          <div class="flex flex-row items-center p-4 bg-gradient-to-r from-red-100 to-transparent border-l-2 border-red-500">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="flex items-center">
+                <div class="text-sm font-medium">UI Art Design</div>
+                <div class="h-2 w-2 rounded-full bg-green-500 ml-2"></div>
+              </div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="text-xs text-gray-400 font-semibold uppercase">Personal</div>
+      </div>
+      <div class="h-full overflow-hidden relative pt-2">
+        <div class="flex flex-col divide-y h-full overflow-y-auto -mx-4">
+          <div class="flex flex-row items-center p-4 relative">
+            <div class="absolute text-xs text-gray-500 right-0 top-0 mr-4 mt-3">2 hours ago</div>
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="text-sm font-medium">Flo Steinle</div>
+              <div class="text-xs truncate w-40">Good after noon! how can i help you?</div>
+            </div>
+            <div class="flex-shrink-0 ml-2 self-end mb-1">
+              <span class="flex items-center justify-center h-5 w-5 bg-red-500 text-white text-xs rounded-full">3</span>
+            </div>
+          </div>
+          <div class="flex flex-row items-center p-4">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="flex items-center">
+                <div class="text-sm font-medium">Sarah D</div>
+                <div class="h-2 w-2 rounded-full bg-green-500 ml-2"></div>
+              </div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+          </div>
+          <div class="flex flex-row items-center p-4">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="flex items-center">
+                <div class="text-sm font-medium">Sarah D</div>
+                <div class="h-2 w-2 rounded-full bg-green-500 ml-2"></div>
+              </div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+          </div>
+          <div class="flex flex-row items-center p-4">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="flex items-center">
+                <div class="text-sm font-medium">Sarah D</div>
+                <div class="h-2 w-2 rounded-full bg-green-500 ml-2"></div>
+              </div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+          </div>
+          <div class="flex flex-row items-center p-4">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-300 font-bold flex-shrink-0">
+              T
+            </div>
+            <div class="flex flex-col flex-grow ml-3">
+              <div class="flex items-center">
+                <div class="text-sm font-medium">Sarah D</div>
+                <div class="h-2 w-2 rounded-full bg-green-500 ml-2"></div>
+              </div>
+              <div class="text-xs truncate w-40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus?</div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute bottom-0 right-0 mr-2">
+          <button class="flex items-center justify-center shadow-sm h-10 w-10 bg-red-500 text-white rounded-full">
+            <svg class="w-6 h-6"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col h-full w-full bg-white px-4 py-6">
+    <div class="flex flex-row items-center py-4 px-6 rounded-2xl shadow">
+      <div class="flex items-center justify-center h-10 w-10 rounded-full bg-pink-500 text-pink-100">
+        T
+      </div>
+      <div class="flex flex-col ml-3">
+        <div class="font-semibold text-sm">UI Art Design</div>
+        <div class="text-xs text-gray-500">Active</div>
+      </div>
+      <div class="ml-auto">
+        <ul class="flex flex-row items-center space-x-2">
+          <li>
+            <a href="#"
+               class="flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-400 h-10 w-10 rounded-full">
+              <span>
+                <svg class="w-5 h-5"
+                     fill="currentColor"
+                     stroke="none"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-400 h-10 w-10 rounded-full">
+              <span>
+                <svg class="w-5 h-5"
+                     fill="currentColor"
+                     stroke="none"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+               class="flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-400 h-10 w-10 rounded-full">
+              <span>
+                <svg class="w-5 h-5"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="h-full overflow-hidden py-4">
+      <div class="h-full overflow-y-auto">
+        <div class="grid grid-cols-12 gap-y-2">
+          <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+              >
+                <div>Hey How are you today?</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Vel ipsa commodi illum saepe numquam maxime
+                  asperiores voluptate sit, minima perspiciatis.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-6 col-end-13 p-3 rounded-lg">
+            <div class="flex items-center justify-start flex-row-reverse">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
+              >
+                <div>I'm ok what about you?</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-6 col-end-13 p-3 rounded-lg">
+            <div class="flex items-center justify-start flex-row-reverse">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
+              >
+                <div>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing. ?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+              >
+                <div>Lorem ipsum dolor sit amet !</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-6 col-end-13 p-3 rounded-lg">
+            <div class="flex items-center justify-start flex-row-reverse">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative mr-3 text-sm bg-indigo-100 py-2 px-4 shadow rounded-xl"
+              >
+                <div>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing. ?
+                </div>
+                <div
+                    class="absolute text-xs bottom-0 right-0 -mb-5 mr-2 text-gray-500"
+                >
+                  Seen
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, in.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-start-1 col-end-8 p-3 rounded-lg">
+            <div class="flex flex-row items-center">
+              <div
+                  class="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0"
+              >
+                A
+              </div>
+              <div
+                  class="relative ml-3 text-sm bg-white py-2 px-4 shadow rounded-xl"
+              >
+                <div class="flex flex-row items-center">
+                  <button
+                      class="flex items-center justify-center bg-indigo-600 hover:bg-indigo-800 rounded-full h-8 w-10"
+                  >
+                    <svg
+                        class="w-6 h-6 text-white"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                      ></path>
+                      <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="1.5"
+                          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div class="flex flex-row items-center space-x-px ml-4">
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-12 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-6 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-5 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-3 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-10 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-1 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-8 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-2 w-1 bg-gray-500 rounded-lg"></div>
+                    <div class="h-4 w-1 bg-gray-500 rounded-lg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center w-full border rounded-3xl h-12 px-2">
+        <button class="flex items-center justify-center h-10 w-10 text-gray-400 ml-1">
+          <svg class="w-5 h-5"
+               fill="none"
+               stroke="currentColor"
+               viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+          </svg>
+        </button>
+        <div class="w-full">
+          <input type="text"
+                 class="border border-transparent w-full focus:outline-none text-sm h-10 flex items-center" placeholder="Type your message....">
+        </div>
+        <div class="flex flex-row">
+          <button class="flex items-center justify-center h-10 w-8 text-gray-400">
+            <svg class="w-5 h-5"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path>
+            </svg>
+          </button>
+          <button class="flex items-center justify-center h-10 w-8 text-gray-400 ml-1 mr-2">
+            <svg class="w-5 h-5"
+                 fill="none"
+                 stroke="currentColor"
+                 viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="ml-6">
+        <button class="flex items-center justify-center h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 text-indigo-800 text-white">
+          <svg class="w-5 h-5 transform rotate-90 -mr-px"
+               fill="none"
+               stroke="currentColor"
+               viewBox="0 0 24 24"
+               xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="container px-4 mx-auto">
+  <div class="flex flex-col">
+      <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+              <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
+                  <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                      <thead class="bg-gray-50 dark:bg-gray-800">
+                          <tr>
+                              <th scope="col" class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                  <div class="flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+                                      <button class="flex items-center gap-x-2">
+                                          <span>Invoice</span>
+
+                                          <svg class="h-3" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M2.13347 0.0999756H2.98516L5.01902 4.79058H3.86226L3.45549 3.79907H1.63772L1.24366 4.79058H0.0996094L2.13347 0.0999756ZM2.54025 1.46012L1.96822 2.92196H3.11227L2.54025 1.46012Z" fill="currentColor" stroke="currentColor" stroke-width="0.1" />
+                                              <path d="M0.722656 9.60832L3.09974 6.78633H0.811638V5.87109H4.35819V6.78633L2.01925 9.60832H4.43446V10.5617H0.722656V9.60832Z" fill="currentColor" stroke="currentColor" stroke-width="0.1" />
+                                              <path d="M8.45558 7.25664V7.40664H8.60558H9.66065C9.72481 7.40664 9.74667 7.42274 9.75141 7.42691C9.75148 7.42808 9.75146 7.42993 9.75116 7.43262C9.75001 7.44265 9.74458 7.46304 9.72525 7.49314C9.72522 7.4932 9.72518 7.49326 9.72514 7.49332L7.86959 10.3529L7.86924 10.3534C7.83227 10.4109 7.79863 10.418 7.78568 10.418C7.77272 10.418 7.73908 10.4109 7.70211 10.3534L7.70177 10.3529L5.84621 7.49332C5.84617 7.49325 5.84612 7.49318 5.84608 7.49311C5.82677 7.46302 5.82135 7.44264 5.8202 7.43262C5.81989 7.42993 5.81987 7.42808 5.81994 7.42691C5.82469 7.42274 5.84655 7.40664 5.91071 7.40664H6.96578H7.11578V7.25664V0.633865C7.11578 0.42434 7.29014 0.249976 7.49967 0.249976H8.07169C8.28121 0.249976 8.45558 0.42434 8.45558 0.633865V7.25664Z" fill="currentColor" stroke="currentColor" stroke-width="0.3" />
+                                          </svg>
+                                      </button>
+                                  </div>
+                              </th>
+
+                              <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                  Date
+                              </th>
+
+                              <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                  Status
+                              </th>
+
+                              <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                  Customer
+                              </th>
+
+                              <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                  Purchase
+                              </th>
+
+                              <th scope="col" class="relative py-3.5 px-4">
+                                  <span class="sr-only">Actions</span>
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                          <tr>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                  <div class="inline-flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                      <span>#3066</span>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan 6, 2022</td>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                  <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
+                                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                      <h2 class="text-sm font-normal">Paid</h2>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                  <div class="flex items-center gap-x-2">
+                                      <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+                                      <div>
+                                          <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur Melo</h2>
+                                          <p class="text-xs font-normal text-gray-600 dark:text-gray-400">authurmelo@example.com</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Monthly subscription</td>
+                              <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                  <div class="flex items-center gap-x-6">
+                                      <button class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                          Archive
+                                      </button>
+
+                                      <button class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                          Download
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                  <div class="inline-flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                      <span>#3065</span>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan 5, 2022</td>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                  <div class="inline-flex items-center px-3 py-1 text-red-500 rounded-full gap-x-2 bg-red-100/60 dark:bg-gray-800">
+                                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M9 3L3 9M3 3L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                      <h2 class="text-sm font-normal">Cancelled</h2>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                  <div class="flex items-center gap-x-2">
+                                      <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+                                      <div>
+                                          <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane</h2>
+                                          <p class="text-xs font-normal text-gray-600 dark:text-gray-400">andi@example.com</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Monthly subscription</td>
+                              <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                  <div class="flex items-center gap-x-6">
+                                      <button class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                          Archive
+                                      </button>
+
+                                      <button class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                          Download
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                  <div class="inline-flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                      <span>#3064</span>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan 5, 2022</td>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                  <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
+                                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                      <h2 class="text-sm font-normal">Paid</h2>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                  <div class="flex items-center gap-x-2">
+                                      <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80" alt="">
+                                      <div>
+                                          <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Kate Morrison</h2>
+                                          <p class="text-xs font-normal text-gray-600 dark:text-gray-400">kate@example.com</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Monthly subscription</td>
+                              <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                  <div class="flex items-center gap-x-6">
+                                      <button class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                          Archive
+                                      </button>
+
+                                      <button class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                          Download
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                  <div class="inline-flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                      <span>#3063</span>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan 4, 2022</td>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                  <div class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
+                                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                      <h2 class="text-sm font-normal">Paid</h2>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                  <div class="flex items-center gap-x-2">
+                                      <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&q=80" alt="">
+                                      <div>
+                                          <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Candice Wu</h2>
+                                          <p class="text-xs font-normal text-gray-600 dark:text-gray-400">candice@example.com</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Monthly subscription</td>
+                              <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                  <div class="flex items-center gap-x-6">
+                                      <button class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                          Archive
+                                      </button>
+
+                                      <button class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                          Download
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                  <div class="inline-flex items-center gap-x-3">
+                                      <input type="checkbox" class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                      <span>#3062</span>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan 4, 2022</td>
+                              <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                  <div class="inline-flex items-center px-3 py-1 text-gray-500 rounded-full gap-x-2 bg-gray-100/60 dark:bg-gray-800">
+                                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M4.5 7L2 4.5M2 4.5L4.5 2M2 4.5H8C8.53043 4.5 9.03914 4.71071 9.41421 5.08579C9.78929 5.46086 10 5.96957 10 6.5V10" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+
+                                      <h2 class="text-sm font-normal">Refunded</h2>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                  <div class="flex items-center gap-x-2">
+                                      <img class="object-cover w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=644&q=80" alt="">
+                                      <div>
+                                          <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Orlando Diggs</h2>
+                                          <p class="text-xs font-normal text-gray-600 dark:text-gray-400">orlando@example.com</p>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Monthly subscription</td>
+                              <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                  <div class="flex items-center gap-x-6">
+                                      <button class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                          Archive
+                                      </button>
+
+                                      <button class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                          Download
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="flex items-center justify-between mt-6">
+      <a href="#" class="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:-scale-x-100">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+          </svg>
+
+          <span>
+              previous
+          </span>
+      </a>
+
+      <div class="items-center hidden md:flex gap-x-3">
+          <a href="#" class="px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60">1</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">2</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">3</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">...</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">12</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">13</a>
+          <a href="#" class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">14</a>
+      </div>
+
+      <a href="#" class="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+          <span>
+              Next
+          </span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:-scale-x-100">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+      </a>
+  </div>
+</section>
+
+<div class="min-h-screen bg-gray-50/50">
+  <!-- <aside class="bg-gradient-to-br from-gray-800 to-gray-900 -translate-x-80 fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 rounded-xl transition-transform duration-300 xl:translate-x-0">
+    <div class="relative border-b border-white/20">
+      <a class="flex items-center gap-4 py-6 px-8" href="#/">
+        <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-white">Material Tailwind Dashboard</h6>
+      </a>
+      <button class="middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-white hover:bg-white/10 active:bg-white/30 absolute right-0 top-0 grid rounded-br-none rounded-tl-none xl:hidden" type="button">
+        <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true" class="h-5 w-5 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div class="m-4">
+      <ul class="mb-4 flex flex-col gap-1">
+        <li>
+          <a aria-current="page" class="active" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 active:opacity-[0.85] w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"></path>
+                <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">dashboard</p>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">profile</p>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path fill-rule="evenodd" d="M1.5 5.625c0-1.036.84-1.875 1.875-1.875h17.25c1.035 0 1.875.84 1.875 1.875v12.75c0 1.035-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 18.375V5.625zM21 9.375A.375.375 0 0020.625 9h-7.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h7.5a.375.375 0 00.375-.375v-1.5zm0 3.75a.375.375 0 00-.375-.375h-7.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h7.5a.375.375 0 00.375-.375v-1.5zm0 3.75a.375.375 0 00-.375-.375h-7.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h7.5a.375.375 0 00.375-.375v-1.5zM10.875 18.75a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-7.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375h7.5zM3.375 15h7.5a.375.375 0 00.375-.375v-1.5a.375.375 0 00-.375-.375h-7.5a.375.375 0 00-.375.375v1.5c0 .207.168.375.375.375zm0-3.75h7.5a.375.375 0 00.375-.375v-1.5A.375.375 0 0010.875 9h-7.5A.375.375 0 003 9.375v1.5c0 .207.168.375.375.375z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">tables</p>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">notifactions</p>
+            </button>
+          </a>
+        </li>
+      </ul>
+      <ul class="mb-4 flex flex-col gap-1">
+        <li class="mx-3.5 mt-4 mb-2">
+          <p class="block antialiased font-sans text-sm leading-normal text-white font-black uppercase opacity-75">auth pages</p>
+        </li>
+        <li>
+          <a class="" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path fill-rule="evenodd" d="M7.5 3.75A1.5 1.5 0 006 5.25v13.5a1.5 1.5 0 001.5 1.5h6a1.5 1.5 0 001.5-1.5V15a.75.75 0 011.5 0v3.75a3 3 0 01-3 3h-6a3 3 0 01-3-3V5.25a3 3 0 013-3h6a3 3 0 013 3V9A.75.75 0 0115 9V5.25a1.5 1.5 0 00-1.5-1.5h-6zm10.72 4.72a.75.75 0 011.06 0l3 3a.75.75 0 010 1.06l-3 3a.75.75 0 11-1.06-1.06l1.72-1.72H9a.75.75 0 010-1.5h10.94l-1.72-1.72a.75.75 0 010-1.06z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">sign in</p>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <button class="middle none font-sans font-bold center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-white hover:bg-white/10 active:bg-white/30 w-full flex items-center gap-4 px-4 capitalize" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-5 h-5 text-inherit">
+                <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"></path>
+              </svg>
+              <p class="block antialiased font-sans text-base leading-relaxed text-inherit font-medium capitalize">sign up</p>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside> -->
+  <div class="p-4 ">
+    <nav class="block w-full max-w-full bg-transparent text-white shadow-none rounded-xl transition-all px-0 py-1">
+      <div class="flex flex-col-reverse justify-between gap-6 md:flex-row md:items-center">
+        <div class="capitalize">
+          <nav aria-label="breadcrumb" class="w-max">
+            <ol class="flex flex-wrap items-center w-full bg-opacity-60 rounded-md bg-transparent p-0 transition-all">
+              <li class="flex items-center text-blue-gray-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-light-blue-500">
+                <a href="#">
+                  <p class="block antialiased font-sans text-sm leading-normal text-blue-900 font-normal opacity-50 transition-all hover:text-blue-500 hover:opacity-100">dashboard</p>
+                </a>
+                <span class="text-gray-500 text-sm antialiased font-sans font-normal leading-normal mx-2 pointer-events-none select-none">/</span>
+              </li>
+              <li class="flex items-center text-blue-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-blue-500">
+                <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-normal">home</p>
+              </li>
+            </ol>
+          </nav>
+          <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-gray-900">home</h6>
+        </div>
+        <div class="flex items-center">
+          <div class="mr-auto md:mr-4 md:w-56">
+            <div class="relative w-full min-w-[200px] h-10">
+              <input class="peer w-full h-full bg-transparent text-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500" placeholder=" ">
+              <label class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal peer-placeholder-shown:text-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-blue-500 before:border-blue-gray-200 peer-focus:before:border-blue-500 after:border-blue-gray-200 peer-focus:after:border-blue-500">Type here</label>
+            </div>
+          </div>
+          <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 grid xl:hidden" type="button">
+            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" stroke-width="3" class="h-6 w-6 text-blue-gray-500">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </button>
+          <a href="#">
+            <button class="middle none font-sans font-bold center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 hidden items-center gap-1 px-4 xl:flex" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd"></path>
+              </svg>Sign In </button>
+            <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 grid xl:hidden" type="button">
+              <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+                  <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </button>
+          </a>
+          <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+                <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </button>
+          <button aria-expanded="false" aria-haspopup="menu" id=":r2:" class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+                <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-12">
+      <div class="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
+          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow-blue-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
+              <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"></path>
+              <path fill-rule="evenodd" d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z" clip-rule="evenodd"></path>
+              <path d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z"></path>
+            </svg>
+          </div>
+          <div class="p-4 text-right">
+            <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Today's Money</p>
+            <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">$53k</h4>
+          </div>
+          <div class="border-t border-blue-gray-50 p-4">
+            <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
+              <strong class="text-green-500">+55%</strong>&nbsp;than last week
+            </p>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
+          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-pink-600 to-pink-400 text-white shadow-pink-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
+              <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="p-4 text-right">
+            <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Today's Users</p>
+            <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">2,300</h4>
+          </div>
+          <div class="border-t border-blue-gray-50 p-4">
+            <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
+              <strong class="text-green-500">+3%</strong>&nbsp;than last month
+            </p>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
+          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-green-600 to-green-400 text-white shadow-green-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
+              <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"></path>
+            </svg>
+          </div>
+          <div class="p-4 text-right">
+            <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">New Clients</p>
+            <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">3,462</h4>
+          </div>
+          <div class="border-t border-blue-gray-50 p-4">
+            <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
+              <strong class="text-red-500">-2%</strong>&nbsp;than yesterday
+            </p>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
+          <div class="bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-orange-600 to-orange-400 text-white shadow-orange-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6 text-white">
+              <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z"></path>
+            </svg>
+          </div>
+          <div class="p-4 text-right">
+            <p class="block antialiased font-sans text-sm leading-normal font-normal text-blue-gray-600">Sales</p>
+            <h4 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">$103,430</h4>
+          </div>
+          <div class="border-t border-blue-gray-50 p-4">
+            <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
+              <strong class="text-green-500">+5%</strong>&nbsp;than yesterday
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3">
+        <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md overflow-hidden xl:col-span-2">
+          <div class="relative bg-clip-border rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none m-0 flex items-center justify-between p-6">
+            <div>
+              <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 mb-1">Projects</h6>
+              <p class="antialiased font-sans text-sm leading-normal flex items-center gap-1 font-normal text-blue-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-500">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                </svg>
+                <strong>30 done</strong> this month
+              </p>
+            </div>
+            <button aria-expanded="false" aria-haspopup="menu" id=":r5:" class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+              <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currenColor" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="p-6 overflow-x-scroll px-0 pt-0 pb-2">
+            <table class="w-full min-w-[640px] table-auto">
+              <thead>
+                <tr>
+                  <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+                    <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">companies</p>
+                  </th>
+                  <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+                    <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">budget</p>
+                  </th>
+                  <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
+                    <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">completion</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="flex items-center gap-4">
+                      <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Material XD Version</p>
+                    </div>
+                  </td>
+                  
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$14,000</p>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="w-10/12">
+                      <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">60%</p>
+                      <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
+                        <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 60%;"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="flex items-center gap-4">
+                      <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Add Progress Track</p>
+                    </div>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$3,000</p>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="w-10/12">
+                      <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">10%</p>
+                      <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
+                        <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 10%;"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="flex items-center gap-4">
+                      <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Fix Platform Errors</p>
+                    </div>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">Not set</p>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="w-10/12">
+                      <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">100%</p>
+                      <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
+                        <div class="flex justify-center items-center h-full bg-gradient-to-tr from-green-600 to-green-400 text-white" style="width: 100%;"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="flex items-center gap-4">
+                      <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Launch our Mobile App</p>
+                    </div>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$20,500</p>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="w-10/12">
+                      <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">100%</p>
+                      <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
+                        <div class="flex justify-center items-center h-full bg-gradient-to-tr from-green-600 to-green-400 text-white" style="width: 100%;"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="flex items-center gap-4">
+                      <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Add the New Pricing Page</p>
+                    </div>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$500</p>
+                  </td>
+                  <td class="py-3 px-5 border-b border-blue-gray-50">
+                    <div class="w-10/12">
+                      <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">25%</p>
+                      <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
+                        <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 25%;"></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+    
+
+    <div class="text-blue-gray-600">
+      <footer class="py-2">
+        <div class="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
+          <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">© 2023, made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="-mt-0.5 inline-block h-3.5 w-3.5">
+              <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"></path>
+            </svg> by <a href="https://www.creative-tim.com" target="_blank" class="transition-colors hover:text-blue-500">Creative Tim</a> for a better web. </p>
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="https://www.creative-tim.com" target="_blank" class="block antialiased font-sans text-sm leading-normal py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500">Creative Tim</a>
+            </li>
+            <li>
+              <a href="https://www.creative-tim.com/presentation" target="_blank" class="block antialiased font-sans text-sm leading-normal py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500">About Us</a>
+            </li>
+            <li>
+              <a href="https://www.creative-tim.com/blog" target="_blank" class="block antialiased font-sans text-sm leading-normal py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500">Blog</a>
+            </li>
+            <li>
+              <a href="https://www.creative-tim.com/license" target="_blank" class="block antialiased font-sans text-sm leading-normal py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500">License</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-100 p-8">
+  <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <div class="flex items-center mb-6">
+      <div class="w-20 h-20 rounded-full bg-blue-500 flex items-center justify-center text-white text-4xl font-bold mr-6">
+        KK
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold text-gray-800 m-2 p-5">KASON KENDALL</h1>
+        <p class="text-gray-600 mb-4">801-349-7168 | kjkendall@graniteschools.org</p>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">EDUCATION</h2>
+      <ul class="space-y-4">
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">Ph.D. Instructional Leadership</div>
+            <div class="text-gray-600">2021-2025 (in progress)</div>
+          </div>
+          <div class="text-gray-600">Utah State University</div>
+        </li>
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">M.B.A. Information Technology</div>
+            <div class="text-gray-600">2019-2020</div>
+          </div>
+          <div class="text-gray-600">Western Governors University</div>
+        </li>
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">Administrative License</div>
+            <div class="text-gray-600">2020-2021</div>
+          </div>
+          <div class="text-gray-600">Utah State University</div>
+          <ul class="list-disc list-inside ml-4 text-gray-600">
+            <li>4.0 GPA</li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">B.A. History and Social Science Teaching</div>
+            <div class="text-gray-600">2014-2018</div>
+          </div>
+          <div class="text-gray-600">Weber State University</div>
+          <ul class="list-disc list-inside ml-4 text-gray-600">
+            <li>3.8 GPA, Honors Society, Supplemental Instruction Leader</li>
+            <li>Internships with the Lt. Governor's Office and Utah State Legislature</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">PROFESSIONAL EXPERIENCE</h2>
+      <ul class="space-y-4">
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">Valley Jr. High School, Teacher & Coach</div>
+            <div class="text-gray-600">2020-Present</div>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-600">
+            <li>Teach history, honors history, and digital literacy</li>
+            <li>Coach basketball, track, and cross country</li>
+            <li>Serve on leadership committee, building committee, and AVID team</li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">South Davis Jr. High School, Teacher & Coach</div>
+            <div class="text-gray-600">2018-2020</div>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-600">
+            <li>Taught geography, current events, and Utah studies</li>
+            <li>Coached track and cross country</li>
+          </ul>
+        </li>
+        <li>
+          <div class="flex justify-between">
+            <div class="text-lg font-bold text-gray-700">Weber State University, Supplemental Instruction Leader</div>
+            <div class="text-gray-600">2016-2018</div>
+          </div>
+          <ul class="list-disc list-inside ml-4 text-gray-600">
+            <li>Tutored students in History 1700</li>
+            <li>Led review sessions before quizzes</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">RESEARCH & PUBLICATIONS</h2>
+      <ul class="list-disc list-inside text-gray-600">
+        <li>Published original research in the field of social studies</li>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">ENDORSEMENTS</h2>
+      <ul class="grid grid-cols-2 gap-4 text-gray-600">
+        <li>Social Science Composite</li>
+        <li>Business, Finance, and Marketing Basic</li>
+        <li>Business, Finance, and Marketing Essentials</li>
+        <li>Financial Literacy</li>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">STRENGTHS</h2>
+      <ul class="grid grid-cols-2 gap-4 text-gray-600">
+        <li>Research and content knowledge in social studies</li>
+        <li>Endorsed in multiple content areas</li>
+        <li>Interdisciplinary instruction and teaching with primary sources</li>
+        <li>Incorporating current events and the Constitution into lessons</li>
+        <li>Coaching and mentoring students</li>
+        <li>Participating in Professional Learning Communities (PLCs)</li>
+        <li>Understanding of Utah politics</li>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">ATHLETIC ACHIEVEMENTS</h2>
+      <ul class="list-disc list-inside text-gray-600">
+        <li>Competed at the national level in the 10,000-meter event as a college track and cross-country athlete</li>
+        <li>Led teams to region and district championships as an athlete and coach</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">PROFESSIONAL DEVELOPMENT</h2>
+      <ul class="list-disc list-inside text-gray-600">
+        <li>Currently working on National Board Certification</li>
+        <li>Successfully passed social studies component 1, demonstrating mastery of content knowledge</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="p-4">
+  <nav class="block w-full max-w-full bg-transparent text-white shadow-none rounded-xl transition-all px-0 py-1">
+    <div class="flex flex-col-reverse justify-between gap-6 md:flex-row md:items-center">
+      <div class="capitalize">
+        <nav aria-label="breadcrumb" class="w-max">
+          <ol class="flex flex-wrap items-center w-full bg-opacity-60 rounded-md bg-transparent p-0 transition-all">
+            <li class="flex items-center text-blue-gray-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-light-blue-500">
+              <a href="#">
+                <p class="block antialiased font-sans text-sm leading-normal text-blue-900 font-normal opacity-50 transition-all hover:text-blue-500 hover:opacity-100">dashboard</p>
+              </a>
+              <span class="text-gray-500 text-sm antialiased font-sans font-normal leading-normal mx-2 pointer-events-none select-none">/</span>
+            </li>
+            <li class="flex items-center text-blue-900 antialiased font-sans text-sm font-normal leading-normal cursor-pointer transition-colors duration-300 hover:text-blue-500">
+              <a href="/"> <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-normal">home</p> </a>
+            </li>
+          </ol>
+        </nav>
+        <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-gray-900">home</h6>
+      </div>
+      <div class="flex items-center">
+        <div class="mr-auto md:mr-4 md:w-56">
+          <div class="relative w-full min-w-[200px] h-10">
+            <input class="peer w-full h-full bg-transparent text-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500" placeholder=" ">
+            <label class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal peer-placeholder-shown:text-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-blue-gray-400 peer-focus:text-blue-500 before:border-blue-gray-200 peer-focus:before:border-blue-500 after:border-blue-gray-200 peer-focus:after:border-blue-500">Type here</label>
+          </div>
+        </div>
+        <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 grid xl:hidden" type="button">
+          <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" stroke-width="3" class="h-6 w-6 text-blue-gray-500">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </button>
+        <a href="#">
+          <button class="middle none font-sans font-bold center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 rounded-lg text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 hidden items-center gap-1 px-4 xl:flex" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+              <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd"></path>
+            </svg>Sign In </button>
+          <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 grid xl:hidden" type="button">
+            <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+                <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd"></path>
+              </svg>
+            </span>
+          </button>
+        </a>
+        <button class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+          <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+              <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </button>
+        <button aria-expanded="false" aria-haspopup="menu" id=":r2:" class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-10 max-w-[40px] h-10 max-h-[40px] rounded-lg text-xs text-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
+          <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-gray-500">
+              <path fill-rule="evenodd" d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z" clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mt-12">
+      <%= react_component "marketing/StatsForMarketingDashboard" %>
+      <%= react_component "marketing/PerformanceForPublishedJobs", {published_job_pages: @published_job_pages} %>
+</div>
+</div>
+
+<div class="bg-white h-screen flex flex-col items-end">
+<div class="flex-1 mt-16 mr-4 w-96 bg-white shadow-xl rounded-lg relative overflow-hidden">
+  <div class="bg-blue-700 h-64 rounded-t-lg absolute w-full z-0"></div>
+  <div class="flex flex-col overflow-y-auto h-full p-4 space-y-4">
+    <div class="flex flex-col z-10 ml-4 text-white">
+      <svg class="w-10 h-10 mb-3 -ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+      <div class="text-3xl mb-2">Hi Sophie 👋</div>
+      <div class="w-60 text-gray-200 text-sm mb-1">We help your business grow by connecting you to your customers.</div>
+    </div>
+    <div class="border-0 border-t-4 border-blue-500 rounded z-10 shadow-md text-sm">
+      <div class="bg-white border border-t-0 rounded-t-none rounded-b flex flex-col space-y-2">
+        <div class="px-6 py-4 flex flex-col items-start gap-3">
+          <div class="font-semibold ">Start a conversation</div>
+          <div class="flex flex-row gap-3">
+            <div class="flex flex-row -space-x-10">
+              <img class="w-16 h-16 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=facearea&w=256&h=256&facepad=2" />
+              <img class="w-16 h-16 rounded-full border-2 border-white" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=facearea&w=256&h=256&facepad=2" />
+              <img class="w-16 h-16 rounded-full border-2 border-white" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=facearea&w=256&h=256&facepad=2" />
+            </div>
+            <div class="flex flex-col justify-center">
+              <div class="text-gray-400">Our usual reply time</div>
+              <div class="flex flex-row items-center gap-1 font-semibold">
+                <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                A few minutes
+              </div>
+            </div>
+          </div>
+          <button type="button" class="bg-blue-700 rounded-full text-white flex flex-row gap-2 py-3 px-5">
+            <svg class="w-5 h-5 transform rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+            Send us a message
+          </button>
+        </div>
+        <div class="border-t px-6 py-4">
+          <a href="#" class="text-sm text-blue-500 hover:text-blue-300">See all your conversations</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-0 border-t-4 border-blue-500 rounded z-10 shadow-md">
+      <div class="bg-white border border-t-0 rounded-t-none rounded-b p-6 flex flex-col space-y-2">
+        <div class="font-semibold text-sm">Find your answer now</div>
+        <div class="flex flex-row">
+          <input type="text" placeholder="Search our articles" class="border flex-1 rounded-l p-2 text-sm shadow-inner outline-none bg-gray-50 focus:bg-white">
+          <button type="button" class="bg-blue-700 p-2 rounded-r">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white border rounded flex items-center justify-center p-8 z-10">
+      this is a card
+    </div>
+    <div class="bg-white border rounded flex items-center justify-center p-8 z-10">
+      this is a card
+    </div>
+  </div>
+  
+</div>
+<div class="bg-blue-600 rounded-full w-16 h-16 m-4 flex items-center justify-center cursor-pointer shadow-xl">
+  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+</div>
+</div>
+
+<!-- <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+  <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <span class="font-semibold text-xl tracking-tight">My Website</span>
+  </div>
+  <div class="block lg:hidden">
+    <button class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+  </div>
+  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div class="text-sm lg:flex-grow">
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+        Home
+      </a>
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4">
+        About
+      </a>
+      <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white">
+        Contact
+      </a>
+    </div>
+  </div>
+</nav> -->
+
+<script>
+  function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.classList.contains("hidden")) {
+    menu.classList.remove("hidden");
+  } else {
+    menu.classList.add("hidden");
+  }
+}
+</script>
+
+</body>
+</html>
