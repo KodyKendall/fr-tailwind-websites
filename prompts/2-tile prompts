@@ -1,9 +1,11 @@
 1. Please create a vanilla html with tailwind css navbar for 2-tile, here is a link to their logo: <img src="@https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52aca3829838aca4c0b0b6be488fb1034926d1c8/2Tile-Logo-Finish-1-removebg-preview.png "/>. Do a white background, with navbar colors being black, with hover beign this color: #2596be, and a CTA button in top right corner of "Free Estimate" being this color: #2596be.
 
-
 2. please change this navbar background to white with a shadow
 
 3. Please fix the free estimate button, it is cut off on the mobile screen and needs to be fixed. Please collapse the navbar menu to be a hamburger menu if on a mobile device, and include the Free Estimate CTA button on the top navbar. 
 
 3. Starting with this page, Please create a modern landing page design with lorem ipsum and image placeholders, icons from font awesome, for a Google PPC campaign. The goal is to get the client to call the phone number, or click on "Free Estimate" button.   Starting with this page, Please create a modern landing page design with lorem ipsum and image placeholders, icons from font awesome, for a Google PPC campaign. The goal is to get the client to call the phone number, or click on "Free Estimate" button.   
 
+4. Please move the phone number to be a secondary header underneath the main header, with a phone icon and sms icon, with the phone number. Make the background the #2596be, with white font, and build. Format <a href> tags with tel: and sms: so that the user can call or text them easily. The phone number to use is: (435) 500-0880
+
+5. please expand this header to be full width, and please remove the "text Us" and put the sms icon to the left of the phone icon
