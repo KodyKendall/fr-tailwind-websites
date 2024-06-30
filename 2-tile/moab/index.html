@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-tile - Professional Tiling Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-blue': '#2596be',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-md p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52aca3829838aca4c0b0b6be488fb1034926d1c8/2Tile-Logo-Finish-1-removebg-preview.png" alt="2-tile Logo" class="h-10 mr-4">
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Home</a>
+                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Services</a>
+                <a href="#" class="text-black hover:text-custom-blue transition duration-300">About</a>
+                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="bg-custom-blue text-white px-4 py-2 rounded hover:bg-opacity-80 transition duration-300 whitespace-nowrap">Free Estimate</a>
+                <a href="tel:1234567890" class="text-custom-blue font-bold hover:underline">Call Now: (123) 456-7890</a>
+                <button class="md:hidden text-custom-blue" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="md:hidden">
+        <div class="container mx-auto mt-4 bg-white shadow-md rounded-lg p-4 hidden" id="mobile-menu">
+            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Home</a>
+            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Services</a>
+            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">About</a>
+            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Contact</a>
+        </div>
+    </div>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-gray-900 text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Transform Your Space with Expert Tiling</h1>
+                        <p class="text-xl mb-8">Professional tiling services for your home or business. Quality craftsmanship guaranteed.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#" class="bg-custom-blue text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300 text-center">Get Free Estimate</a>
+                            <a href="tel:1234567890" class="border border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition duration-300 text-center">Call (123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400" alt="Tiling Service" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose 2-tile?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <i class="fas fa-medal text-5xl text-custom-blue mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Expert Craftsmanship</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-clock text-5xl text-custom-blue mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Timely Completion</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-dollar-sign text-5xl text-custom-blue mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Competitive Pricing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-custom-blue text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Start Your Tiling Project?</h2>
+                <p class="text-xl mb-8">Contact us today for a free estimate and expert consultation.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="bg-white text-custom-blue px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition duration-300">Get Free Estimate</a>
+                    <a href="tel:1234567890" class="border border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-custom-blue transition duration-300">Call (123) 456-7890</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 2-tile. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
