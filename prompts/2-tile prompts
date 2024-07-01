@@ -1,3 +1,8 @@
+NOTE: Before starting, get the brand colors from the logo here: https://imagecolorpicker.com/
+
+Get the logo URL by using Field Rocket agency dashboard to sign into the user's account, click on the "business" setting on the lefthand menu, right click on the logo and click "copy image address".
+
+
 1. Please create a vanilla html with tailwind css navbar for 2-tile, here is a link to their logo: <img src="@https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52aca3829838aca4c0b0b6be488fb1034926d1c8/2Tile-Logo-Finish-1-removebg-preview.png "/>. Do a white background, with navbar colors being black, with hover beign this color: #2596be, and a CTA button in top right corner of "Free Estimate" being this color: #2596be.
 
 2. please change this navbar background to white with a shadow
@@ -29,3 +34,13 @@
 
 ^^ NOTE: I had to manually figure out that it added a p-4 (padding: 4px) to <nav class="p-4 ..."> that was causing an issue with the banner. 
 
+
+7. Please update the phone number in all places of this page to be 435 500 0880.
+
+8. Here are a list of images. Please update any image tags to use the following URLs: https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcjBpIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a4e47da9cf50a61823aa8ef92cfd7d27ec5a6e7c/IMG_0793.HEIC (landscape image of kitchen remodel, roughly 600 x 400 image), https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdGNoIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6570ef57002153a8d8a00877ebd54ce08133814e/IMG_0754.HEIC (portrait image of shower tiling remodel, 400 x 600 image)
+
+9. please modify the sales and marketing copy to be focused on Expert Bathroom Remodels, Kitchen Remodels, and Tiling Work in Moab, Utah. Please change lorem ipsum to real and effective copywriting in order to drive conversions and people clicking on the free estimate button. 
+
+10. When I scroll down, the navbar is getting slightly shifted up and getting cut off. Can you please identify what the issue is, and provide a fix for me?
+
+^^ This last prompt didn't fix the issue, and I had to manually go in and try some things until it worked.
