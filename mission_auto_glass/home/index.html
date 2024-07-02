@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Auto Glass - Charleston Auto Glass Replacement</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
     <header class="bg-gray-900 text-white">
@@ -36,10 +38,15 @@
             
             <!-- Content overlay -->
             <div class="relative z-10 h-full flex items-center justify-center">
-              <div class="container mx-auto px-4 text-white">
-                <h1 class="text-4xl font-bold mb-4">Charleston Auto Glass Replacement</h1>
-                <p class="mb-8 max-w-2xl">Welcome to Mission Auto Glass in Charleston, SC, where we combine excellence in auto glass services with a steadfast commitment to safety, satisfaction, and the seamless functionality of your vehicle.</p>
-                <button class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">REQUEST ESTIMATE</button>
+              <div class="container mx-auto px-4 flex items-center">
+                <div class="w-1/2 text-white">
+                  <h1 class="text-4xl font-bold mb-4">Charleston Auto Glass Replacement</h1>
+                  <p class="mb-8 max-w-2xl">Welcome to Mission Auto Glass in Charleston, SC, where we combine excellence in auto glass services with a steadfast commitment to safety, satisfaction, and the seamless functionality of your vehicle.</p>
+                  <button class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">REQUEST ESTIMATE</button>
+                </div>
+                <div class="w-1/2 flex justify-center">
+                  <img src="https://missionautoglassllc.com/wp-content/uploads/2023/12/Untitled-design-64.png" alt="Auto Glass Replacement" class="max-w-full h-auto object-contain" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="300">
+                </div>
               </div>
             </div>
           </div>
@@ -86,5 +93,11 @@
             </div>
         </section>
     </main>
+
+    <!-- Add AOS JS and initialize -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
