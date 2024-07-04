@@ -22,28 +22,30 @@
 <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16612261287"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16612261287'); </script>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-white shadow-md fixed w-full z-10 pt-3">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52aca3829838aca4c0b0b6be488fb1034926d1c8/2Tile-Logo-Finish-1-removebg-preview.png" alt="2-tile Logo" class="h-10 mr-4">
-            </div>
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Home</a>
-                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Services</a>
-                <a href="#" class="text-black hover:text-custom-blue transition duration-300">About</a>
-                <a href="#" class="text-black hover:text-custom-blue transition duration-300">Contact</a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="https://app.fieldrocket.us/l/1536" class="bg-custom-blue text-white px-4 py-2 rounded hover:bg-opacity-80 transition duration-300 whitespace-nowrap">Get Free Estimate</a>
-                <button class="md:hidden text-custom-blue" id="menu-toggle">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+    <nav class="bg-white shadow-md fixed w-full z-20">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUlkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--52aca3829838aca4c0b0b6be488fb1034926d1c8/2Tile-Logo-Finish-1-removebg-preview.png" alt="2-tile Logo" class="h-10 mr-4">
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="text-black hover:text-custom-blue transition duration-300">Home</a>
+                    <a href="#" class="text-black hover:text-custom-blue transition duration-300">Services</a>
+                    <a href="#" class="text-black hover:text-custom-blue transition duration-300">About</a>
+                    <a href="#" class="text-black hover:text-custom-blue transition duration-300">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://app.fieldrocket.us/l/1536" class="bg-custom-blue text-white px-4 py-2 rounded hover:bg-opacity-80 transition duration-300 whitespace-nowrap">Get Free Estimate</a>
+                    <button class="md:hidden text-custom-blue" id="menu-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="bg-custom-blue text-white py-2 mt-4">
-            <div class="container mx-auto flex justify-center items-center space-x-4">
+        <div class="bg-custom-blue text-white py-2">
+            <div class="container mx-auto px-4 flex justify-center items-center space-x-4">
                 <a href="sms:4355000880" class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -60,12 +62,17 @@
         </div>
     </nav>
 
-    <div class="md:hidden">
-        <div class="container mx-auto mt-4 bg-white shadow-md rounded-lg p-4 hidden" id="mobile-menu">
-            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Home</a>
-            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Services</a>
-            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">About</a>
-            <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Contact</a>
+    <!-- Mobile Menu -->
+    <div class="md:hidden fixed inset-0 z-10 bg-gray-800 bg-opacity-50 overflow-y-auto h-full w-full" id="mobile-menu-overlay" style="display: none;">
+        <div class="relative top-20 mx-auto p-5 border w-full max-w-md shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <div class="mt-2 px-7 py-3">
+                    <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Home</a>
+                    <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Services</a>
+                    <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">About</a>
+                    <a href="#" class="block py-2 text-black hover:text-custom-blue transition duration-300">Contact</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -73,13 +80,13 @@
         <!-- Blog Post Header -->
         <header class="bg-gradient-to-r from-custom-blue to-blue-600 text-white py-20">
             <div class="container mx-auto px-4">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Enhancing Safety and Comfort: Elderly-Focused Bathroom Remodeling in Ephraim, UT</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Remodeling a Bathroom for Senior Safety</h1>
                 <p class="text-xl mb-6" data-aos="fade-up" data-aos-delay="200">Discover how 2 Tile Bath, Kitchen, and Tile Remodels is transforming bathrooms for senior homeowners</p>
                 <div class="flex items-center" data-aos="fade-up" data-aos-delay="400">
                     <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/lkydx3kymgu7y1m6fjiel0yd0rpx" alt="Author" class="rounded-full mr-4 w-16 h-16">
                     <div>
                         <p class="font-semibold">Alex Castro</p>
-                        <p class="text-sm">Posted on May 15, 2024</p>
+                        <p class="text-sm">Posted on July 2, 2024</p>
                     </div>
                 </div>
             </div>
@@ -135,7 +142,7 @@
 
 <div class="max-w-3xl mx-auto space-y-8" data-aos="fade-up">
     <p class="text-xl text-gray-700 leading-relaxed">
-        When it comes to Utah County bathroom remodeling, especially for our elderly community in Ephraim, UT, I can't stress enough how important safety and accessibility are. At 2 Tile Bath, Kitchen, and Tile Remodels, I've made it my mission to understand the unique needs of our senior homeowners. I go the extra mile to ensure their bathrooms are not just beautiful, but also safe and functional.
+        When it comes to Utah County bathroom remodeling, especially for our elderly community in Utah County, I can't stress enough how important safety and accessibility are. At 2 Tile Bath, Kitchen, and Tile Remodels, I've made it my mission to understand the unique needs of our senior homeowners. I go the extra mile to ensure their bathrooms are not just beautiful, but also safe and functional.
     </p>
     
     <div class="space-y-4">
@@ -215,7 +222,11 @@
     });
 
     document.getElementById('menu-toggle').addEventListener('click', function() {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('mobile-menu-overlay').style.display = 'block';
+    });
+
+    document.getElementById('mobile-menu-overlay').addEventListener('click', function() {
+        document.getElementById('mobile-menu-overlay').style.display = 'none';
     });
 </script>
 </body>
