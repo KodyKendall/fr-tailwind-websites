@@ -44,3 +44,6 @@ Get the logo URL by using Field Rocket agency dashboard to sign into the user's 
 10. When I scroll down, the navbar is getting slightly shifted up and getting cut off. Can you please identify what the issue is, and provide a fix for me?
 
 ^^ This last prompt didn't fix the issue, and I had to manually go in and try some things until it worked.
+
+11. 'Darkening' an image would require a dark overlay. Making an image lighter is decreasing its opacity.
+For example, "<div class="absolute inset-0 bg-black opacity-50 z-10"></div> <!-- Dark overlay -->"
