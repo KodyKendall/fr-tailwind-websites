@@ -85,6 +85,27 @@
             font-size: 16px;
             color: #333333;
         }
+        .footer-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer-logo {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .footer-text {
+            font-size: 20px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +121,10 @@
             <span class="page-indicator" id="pageIndicator"></span>
             <button class="nav-button" id="nextButton">→</button>
         </div>
+    </div>
+    <div class="footer-banner">
+        <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="footer-logo">
+        <span class="footer-text">Built with Field Rocket</span>
     </div>
 
     <script>
