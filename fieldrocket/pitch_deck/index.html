@@ -19,7 +19,8 @@
         }
         .pitch-deck-container {
             position: relative;
-            width: 800px;
+            width: 90%;
+            max-width: 800px;
             padding-bottom: 70px; /* Space for navigation */
         }
         .pitch-deck {
@@ -41,7 +42,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            width: 100px;
+            width: 80px;
             height: auto;
         }
         .slide-content-wrapper {
@@ -73,8 +74,8 @@
             background-color: #4a4a4a;
             color: white;
             border: none;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 8px 16px;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
         }
@@ -82,7 +83,7 @@
             background-color: #5a5a5a;
         }
         .page-indicator {
-            font-size: 16px;
+            font-size: 14px;
             color: #333333;
         }
         .footer-banner {
@@ -98,13 +99,35 @@
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
         .footer-logo {
-            width: 50px;
+            width: 40px;
             height: auto;
             margin-right: 10px;
         }
         .footer-text {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .pitch-deck {
+                height: 350px;
+                padding: 10px;
+            }
+            .logo {
+                width: 60px;
+            }
+            .nav-button {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            .page-indicator {
+                font-size: 12px;
+            }
+            .footer-logo {
+                width: 30px;
+            }
+            .footer-text {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -117,7 +140,7 @@
             </div>
         </div>
         <div class="navigation">
-            <button class="nav-button" id="prevButton">��</button>
+            <button class="nav-button" id="prevButton">←</button>
             <span class="page-indicator" id="pageIndicator"></span>
             <button class="nav-button" id="nextButton">→</button>
         </div>
@@ -151,7 +174,7 @@
                 <div class="text-red-500 text-4xl font-bold mb-4">Solution</div>
                 <div class="text-gray-800 text-2xl mb-2">Field Rocket: Comprehensive AI-Driven Platform</div>
                 <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
-                    <li>Tool to create custom websites, custom web-app functionality, and  AI generated content showcasing contractor work, pricing, and success stories.</li>
+                    <li>Tool to create custom websites, custom web-app functionali , and  AI generated content showcasing contractor work, pricing, and success stories.</li>
                     <li>Tools for scheduling, invoicing, CRM, payments, text messaging, estimating, and picture uploading.</li>
                     <li>Streamlined processes and automation to save time and reduce costs.</li>
                     <li>Easy-to-use platform designed specifically for residential contractors.</li>
