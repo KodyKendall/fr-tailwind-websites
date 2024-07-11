@@ -17,9 +17,9 @@
     <header class="absolute top-0 left-0 w-full bg-transparent z-20 text-white"> <!-- Make header overlap the body -->
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/7ybhavk5ndufpetjy9lobpwn2m72" alt="Mission Auto Glass Logo" class="ml-24 mr-2" style="max-width: 227px;">
+                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/7ybhavk5ndufpetjy9lobpwn2m72" alt="Mission Auto Glass Logo" class="ml-4 md:ml-24 mr-2" style="max-width: 227px;">
             </div>
-            <nav class="flex-1 flex justify-center items-center">
+            <nav class="hidden md:flex flex-1 justify-center items-center">
                 <ul class="flex space-x-4">
                     <li><a href="#" class="hover:text-red-500 active:text-[#cf2e2e] px-2 py-1 rounded flex items-center">Home</a></li>
                     <li class="relative group">
@@ -43,6 +43,35 @@
                 </ul>
                 <button class="bg-white text-[#cf2e2e] px-6 py-3 font-bold ml-4" style="border: 4px solid #253993;">REQUEST ESTIMATE</button>
             </nav>
+            <button class="md:hidden text-white" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden" id="mobile-menu">
+            <ul class="flex flex-col space-y-2 p-4 bg-gray-800">
+                <li><a href="#" class="hover:text-red-500 active:text-[#cf2e2e] px-2 py-1 rounded flex items-center">Home</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-red-500 active:text-[#cf2e2e] px-2 py-1 rounded flex items-center">
+                        Services
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                    <ul class="absolute left-0 hidden mt-2 w-48 bg-white text-black rounded shadow-lg group-hover:block">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Windshield Replacement Service</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Comprehensive Auto Glass Repair</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Door and Rear Window Repair</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Fleet Auto Glass Services</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Mobile Glass Repair Services</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Windshield Chip Repair Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-red-500 active:text-[#cf2e2e] px-2 py-1 rounded flex items-center">Service Areas</a></li>
+                <li><a href="#" class="hover:text-red-500 active:text-[#cf2e2e] px-2 py-1 rounded flex items-center">Request Estimate</a></li>
+                <li><button class="bg-white text-[#cf2e2e] px-6 py-3 font-bold" style="border: 4px solid #253993;">REQUEST ESTIMATE</button></li>
+            </ul>
         </div>
     </header>
 
@@ -58,7 +87,7 @@
             <div class="relative z-10 h-full flex items-center justify-center">
               <div class="container mx-auto px-4 flex flex-col items-center">
                 <div class="w-full text-white text-center mb-8 mt-48">
-                  <h1 class="text-6xl font-bold mb-4 italic">Charleston Auto Glass Replacement</h1>
+                  <h1 class="text-4xl md:text-6xl font-bold mb-4 italic">Charleston Auto Glass Replacement</h1>
                   <div class="w-16 h-1 mx-auto mb-6 mt-8" style="background-color: #cf2e2e;"></div>
                   <p class="mb-8 max-w-2xl mx-auto">Welcome to Mission Auto Glass in Charleston, SC, where we combine excellence in auto glass services with a steadfast commitment to safety, satisfaction, and the seamless functionality of your vehicle.</p>
                   <div class="relative inline-block">
@@ -71,8 +100,8 @@
                     </button>
                   </div>
                 </div>
-                <div class="relative z-20 w-full flex justify-center mb-8">
-                    <img src="https://missionautoglassllc.com/wp-content/uploads/2023/12/Untitled-design-64.png" alt="Auto Glass Replacement" class="w-1/2 h-auto object-contain" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="300">
+                <div class="relative z-20 w-full flex justify-center mb-8 md:mb-0"> <!-- Add md:mb-0 to reset margin in larger screens -->
+                    <img src="https://missionautoglassllc.com/wp-content/uploads/2023/12/Untitled-design-64.png" alt="Auto Glass Replacement" class="w-full md:w-1/2 h-auto object-contain" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="300">
                 </div>
               </div>
             </div>
@@ -81,7 +110,7 @@
        <!-- Cards Section -->
         <div class="relative z-10 -mt-36">
             <div class="container mx-auto max-w-7xl px-8 py-16 h-auto min-h-[50vh]">
-                <div class="grid grid-cols-1 md:grid-cols-3 justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
                 <!-- Card 1 -->
                 <div class="p-4 bg-[#7A7A7A] text-white h-80 flex flex-col justify-center relative">
                 <div class="relative mb-4 pl-4">
@@ -136,6 +165,11 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
