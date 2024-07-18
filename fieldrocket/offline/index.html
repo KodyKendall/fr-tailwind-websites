@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Tailwind and AOS Example</title>
+    <link rel="stylesheet" href="./../build/css/style.css">
+    <link rel="stylesheet" href="./../../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./../../node_modules/tailwindcss/tailwind.css"> <!-- Add Tailwind CSS -->
+</head>
+<body class="bg-black">
+    <script src="./../../node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+    <!-- Example content to demonstrate Tailwind and AOS -->
+    <div class="container mx-auto p-4 bg-black">
+        <h1 class="text-4xl font-bold text-center" data-aos="fade-up">Hello, Tailwind and AOS!</h1>
+        <p class="mt-4 text-center" data-aos="fade-in">This is a simple example to show Tailwind CSS and AOS working offline.</p>
+    </div>
+</body>
+</html>
