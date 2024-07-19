@@ -3,61 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uplifting Garage</title>
+    <title>Uplifting Garage Doors | Garage Door Repair & Installation</title>
+    <meta name="description" content="Expert garage door repair, installation, and maintenance services in Salt Lake City, West Valley, West Jordan, South Jordan, and Midvale. Call Uplifting Garage Doors today at (801) 682-7586 for a free consultation.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
-<body class="bg-white text-gray-600 font-sans antialiased">
+<body class="bg-gray-100 text-gray-700">
 
-    <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-4 py-4">
-            <h1 class="text-2xl font-bold">Uplifting Garage</h1>
+    <!-- Header Section -->
+    <header class="bg-yellow-500 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="https://upliftinggarage.com/wp-content/uploads/2024/03/UG-YW.svg" alt="Uplifting Garage Doors Logo" class="h-12">
+            <div class="text-white">
+                <span class="block text-lg">Call Us: (801) 682-7586</span>
+                <span class="block">Serving Salt Lake City, West Valley, West Jordan, South Jordan, Midvale</span>
+            </div>
         </div>
     </header>
 
-    <main class="mt-16">
-        <section class="container mx-auto px-4 py-16" data-aos="fade-up">
-            <div class="text-center">
-                <img src="path/to/logo.png" alt="Logo" class="mx-auto mb-4 w-1/5 max-w-xs">
-                <h2 class="text-4xl font-bold mb-4">Welcome to Uplifting Garage</h2>
-                <p class="text-lg mb-8">Your trusted partner for all your garage door needs.</p>
-                <a href="#contact" class="bg-yellow-500 text-white py-2 px-4 rounded-full hover:bg-yellow-600 transition">Contact Us</a>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('https://service-jobs-images.s3.us-east-2.amazonaws.com/fzgldvqjd3muhyzf7b3pu2inmiiv');">
+        <div class="hero-overlay"></div>
+        <div class="container mx-auto h-full flex items-center justify-center hero-content">
+            <div class="text-center text-white">
+                <h1 class="text-5xl font-bold">Expert Garage Door Repair & Installation</h1>
+                <p class="mt-4 text-lg">Fast, reliable service across Salt Lake County. Call us today for a free consultation!</p>
+                <a href="tel:8016827586" class="mt-6 inline-block bg-white text-yellow-500 font-bold py-2 px-4 rounded">Call (801) 682-7586</a>
+                <a href="https://app.fieldrocket.us/l/3068" class="mt-4 inline-block bg-yellow-500 text-white font-bold py-2 px-4 rounded">Contact us for a free quote</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="bg-yellow-500 text-white py-16" data-aos="fade-up">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-4">Our Services</h3>
-                        <p class="mb-4">We offer a wide range of garage door services including installation, repair, and maintenance.</p>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-4">Why Choose Us?</h3>
-                        <p class="mb-4">With years of experience and a commitment to quality, we ensure your garage door is in the best hands.</p>
-                    </div>
+    <!-- Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Garage Door Repair</h3>
+                    <p>Uplifting Garage Doors efficiently handles all garage door issues—from broken springs to malfunctioning openers. Our talented team provides fast, reliable service, ensuring your home’s security and convenience. Trust us to get it right the first time. Schedule an appointment today at (801) 682-7586.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Garage Door Installation</h3>
+                    <p>Expert residential and commercial garage door installation across Salt Lake County. Choose from a variety of materials and styles to suit your needs. We ensure smooth operation and long-lasting performance. Call us for a free consultation.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Garage Door Maintenance</h3>
+                    <p>Regular maintenance is vital for your garage doors’ longevity and to prevent costly repairs. Trust Uplifting Garage Doors for dependable and affordable maintenance services. Our experts ensure smooth door operation for years to come, detecting issues early and avoiding unnecessary wear. Call us today for a free consultation and exceptional service.</p>
                 </div>
             </div>
-        </section>
-
-        <section class="container mx-auto px-4 py-16" id="contact" data-aos="fade-up">
-            <div class="text-center">
-                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
-                <p class="mb-4">Call us at (801) 682-7586 for a free consultation.</p>
-                <p class="mb-4">Email: <a href="mailto:doors@upliftinggarage.com" class="text-blue-500">doors@upliftinggarage.com</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024, Uplifting Garage Doors, LLC. All Rights Reserved.</p>
         </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/885hnptw6bzq4ft6f5vztcmljhm8" alt="Uplifting Garage Doors Truck" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+                    <h2 class="text-3xl font-bold mb-4">Uplifting Your Doors, Our Community, and You</h2>
+                    <p>At Uplifting Garage Doors, we’re more than just a service provider—we’re your neighbors, and we’re committed to making a positive impact in Salt Lake City. As a locally owned and operated business, serving our community is at the heart of everything we do. Our mission is to enhance the lives of our fellow residents by delivering reliable, affordable, and top-quality garage door repair and maintenance services.</p>
+                    <p>Whether it’s resolving issues with openers, addressing panel damage, or tending to general wear and tear, we’re here to ensure that your home remains secure and convenient. Our team takes immense pride in serving our city, and we’re dedicated to providing a seamless, stress-free experience for every customer. When you choose Uplifting Garage Doors, you’re not just getting a service—you’re supporting a local business with a passion for improving our community, one door at a time.</p>
+                    <p>With over 10 years of experience, our skilled professionals prioritize the security and convenience of your home or business. We provide fast and reliable solutions, from prompt maintenance to addressing door issues before they become costly repairs. Contact us today for exceptional service and reliable door operation.</p>
+                    <a href="https://app.fieldrocket.us/l/3068" class="mt-4 inline-block bg-yellow-500 text-white font-bold py-2 px-4 rounded">Contact us for a free quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="italic">"Uplifting Garage Doors fixed my garage door quickly and professionally. Their service was top-notch and affordable. Highly recommend!"</p>
+                    <p class="mt-4 font-bold">- John D., Salt Lake City</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="italic">"Excellent service from start to finish. The team at Uplifting Garage Doors was friendly, knowledgeable, and efficient. My garage door works perfectly now."</p>
+                    <p class="mt-4 font-bold">- Sarah K., West Valley</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-yellow-500 py-12">
+        <div class="container mx-auto text-center text-white">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="mb-8">For reliable and affordable garage door services in Salt Lake City, West Valley, West Jordan, South Jordan, and Midvale, call Uplifting Garage Doors today at (801) 682-7586 or email us at doors@upliftinggarage.com.</p>
+            <a href="tel:8016827586" class="bg-white text-yellow-500 font-bold py-2 px-4 rounded">Call (801) 682-7586</a>
+            <a href="https://app.fieldrocket.us/l/3068" class="mt-4 inline-block bg-white text-yellow-500 font-bold py-2 px-4 rounded">Contact us for a free quote</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <p>&copy; 2024 Uplifting Garage Doors. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
