@@ -50,3 +50,4 @@ Get the logo URL by using Field Rocket agency dashboard to sign into the user's 
 
 11. 'Darkening' an image would require a dark overlay. Making an image lighter is decreasing its opacity.
 For example, "<div class="absolute inset-0 bg-black opacity-50 z-10"></div> <!-- Dark overlay -->"
+
