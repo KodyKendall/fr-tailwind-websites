@@ -13,165 +13,367 @@
         .secondary-color { color: #fbb119; }
         .bg-primary { background-color: #2596be; }
         .bg-secondary { background-color: #fbb119; }
-        .rounded-lg { border-radius: 0.5rem; }
+        .rounded-md { border-radius: 0.25rem; }
         .shadow-lg { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
+        .sticky-section { transition: transform 0.3s ease-in-out; }
+        .sticky-section.hidden { transform: translateY(-100%); }
+        .phone-frame {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 500px;
+            background-color: white;
+            border-radius: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .phone-notch {
+            position: absolute;
+            top: 0;
+            height: 1rem;
+            background-color: #000;
+            width: 40%;
+            border-radius: 0 0 1rem 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        .phone-sides {
+            position: absolute;
+            top: 1rem;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
+            background-color: transparent;
+            border-radius: 1rem;
+            z-index: 1;
+        }
+        .phone-bottom {
+            position: absolute;
+            bottom: 0;
+            height: 1rem;
+            background-color: #000;
+            width: 40%;
+            border-radius: 1rem 1rem 0 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        .phone-frame img {
+            position: absolute;
+            top: 1rem;
+            bottom: 1rem;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+            border-radius: 1rem;
+            z-index: 0;
+        }
+        .carousel-item {
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            padding: 20px;
+        }
+        .carousel-active {
+            transform: scale(1);
+            opacity: 1;
+            background-color: #a3d8f4;
+        }
+        .carousel-inactive {
+            transform: scale(0.9);
+            opacity: 0.5;
+            background-color: gray;
+        }
+        .carousel-button {
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .carousel-button.left {
+            left: 0;
+        }
+        .carousel-button.right {
+            right: 0;
+        }
+        .review-text-container {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+        }
+        .review-text {
+            max-width: 70%;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <header class="bg-gray-900 text-white py-4 w-full z-50" x-data="{ mobileMenuOpen: false }">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center">
-                <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUFxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f155ee857446c5b24ddffabab7af1d49ebd5852e/fixmate-pro.png" alt="Fix Mate Pro Logo" class="h-24 mr-2">
-                <h1 class="text-2xl font-bold">FixMATE PRO</h1>
-            </div>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-4 items-center">
-                    <li><a href="#" class="hover:text-green-400">Home</a></li>
-                    <li><a href="#services" class="hover:text-green-400">Services</a></li>
-                    <li><a href="#testimonials" class="hover:text-green-400">Testimonials</a></li>
-                    <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
-                    <li><a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-green-700 ml-4">Free Estimate</a></li>
-                </ul>
-            </nav>
-            <div class="md:hidden">
-                <button @click="mobileMenuOpen = !mobileMenuOpen" class="flex items-center focus:outline-none">
-                    <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-green-700 mr-4">Free Estimate</a>
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M3 5h18a1 1 0 110 2H3a1 1 0 110-2zm0 6h18a1 1 0 110 2H3a1 1 0 110-2zm0 6h18a1 1 0 110 2H3a1 1 0 110-2z"/>
-                    </svg>
-                </button>
-            </div>
+    <header class="w-full z-50">
+        <div class="bg-primary text-white text-center py-3">
+            <p class="text-xl">0% FINANCING AVAILABLE NOW!</p>
         </div>
-        <div id="mobile-menu" class="md:hidden bg-gray-800 text-white text-center py-2 mt-4" x-show="mobileMenuOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90">
-            <ul class="space-y-2">
-                <li><a href="#" class="block hover:bg-gray-700 py-2">Home</a></li>
-                <li><a href="#services" class="block hover:bg-gray-700 py-2">Services</a></li>
-                <li><a href="#testimonials" class="block hover:bg-gray-700 py-2">Testimonials</a></li>
-                <li><a href="#contact" class="block hover:bg-gray-700 py-2">Contact</a></li>
-            </ul>
-        </div>
-        <div class="bg-primary text-white py-2 mt-4">
-            <div class="container mx-auto flex justify-center items-center space-x-4">
-                <a href="sms:7252924422" class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                    </svg>
-                    <span>Text Us</span>
-                </a>
-                <a href="tel:7252924422" class="flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span class="font-bold">(725) 292-4422</span>
-                </a>
+        <div class="bg-white py-4 shadow-md">
+            <div class="container mx-auto flex justify-between items-center px-4">
+                <div class="flex items-center">
+                    <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUFxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f155ee857446c5b24ddffabab7af1d49ebd5852e/fixmate-pro.png" alt="Fix Mate Pro Logo" class="h-16 mr-2">
+                    <h1 class="text-xl font-bold">FixMATE PRO</h1>
+                </div>
+                <div class="hidden md:flex items-center flex-grow justify-center">
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 primary-color" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span class="text-2xl font-bold text-gray-800">(725) 292-4422</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 font-bold">Schedule a Service</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-secondary text-white py-20">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Your Las Vegas Air Conditioning Experts</h1>
-                    <p class="text-xl mb-8">Furnace Blowing cold air or not working? Our team of highly experienced and trained technicians are equipped with the latest tools and technology to affordably diagnose, troubleshoot, and resolve any heating or cooling issue.</p>
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 text-center">BOOK A SERVICE NOW</a>
-                        <a href="tel:7252924422" class="border border-white text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-secondary transition duration-300 text-center">Call (725) 292-4422</a>
+    <section class="relative h-screen bg-cover bg-center" style="background-image: url('your-image-url-here.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center relative z-10 text-white">
+            <nav class="absolute top-0 left-0 w-full mt-8">
+                <ul class="flex justify-center space-x-16">
+                    <li><a href="#new-systems" class="text-2xl font-bold hover:text-primary-color">New Systems</a></li>
+                    <li><a href="#tune-ups" class="text-2xl font-bold hover:text-primary-color">Tune-Ups</a></li>
+                    <li><a href="#about-us" class="text-2xl font-bold hover:text-primary-color">About Us</a></li>
+                    <li><a href="#financing" class="text-2xl font-bold hover:text-primary-color">Financing</a></li>
+                    <li><a href="#news-tips" class="text-2xl font-bold hover:text-primary-color">News & Tips</a></li>
+                    <li><a href="#contact" class="text-2xl font-bold hover:text-primary-color">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mt-32">
+                <h1 class="text-4xl font-bold mb-8">Utah's Premier Heating and Cooling Company</h1>
+                <p class="text-lg md:text-2xl mb-12">At FixMATE PRO, we know how crucial it is to keep your home comfortable regardless of the weather outside. With our years of expertise, we provide cost-effective and reliable heating and cooling solutions to improve the comfort of your home.</p>
+                <div class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 justify-center">
+                    <a href="#contact" class="bg-red-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-red-700 flex items-center justify-center">
+                        Book service call
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#services" class="text-primary-color px-6 py-3 rounded-md text-lg font-bold hover:bg-primary hover:text-white flex items-center justify-center">
+                        See our Heating and Cooling systems
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="sticky-section" class="sticky-section hidden fixed top-0 left-0 w-full bg-primary text-white text-center py-3 z-50">
+        <p class="text-xl font-bold">Call for quick service! <span>(725) 292-4422</span></p>
+    </div>
+
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-4">Your Utah Heating and Cooling Experts</h2>
+            <p class="text-lg md:text-2xl mb-12">Furnace blowing cold air or not working? Our team of highly experienced and trained technicians are equipped with the latest tools and technology to affordably diagnose, troubleshoot, and resolve any heating or cooling issue.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="bg-black text-white p-8 rounded-md shadow-lg flex flex-col justify-between h-screen">
+                    <div class="flex-grow">
+                        <div class="mb-4 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-secondary-color" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l1.5 1.5a3.5 3.5 0 11-4.9 0L2 11V6a2 2 0 012-2h2a2 2 0 012 2v5zm5 5V7a2 2 0 012-2h4a2 2 0 012 2v9h2a2 2 0 012 2v2H7v-2a2 2 0 012-2h2zm4-2h1a2 2 0 100-4h-1v4zm-5 0H8a2 2 0 100-4h1v4zm8 0h1a2 2 0 100-4h-1v4zm-4-2h1v-4h-1v4zm0 0v-4h-1v4h1z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-2">Furnace Repair & Replacement</h3>
+                        <p class="mb-4">Our experts specialize in furnace repair and replacement to ensure your home stays warm and cozy. Contact us today for a service call.</p>
+                        <p class="mb-8">Get ready for winter!</p>
                     </div>
+                    <a href="#contact" class="bg-red-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-red-700 flex items-center justify-center mx-auto mt-auto">
+                        Book service call
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="md:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <img src="https://performheatingandcooling.com/wp-content/uploads/2023/08/ac-system-repair.jpg" alt="AC System Repair" class="rounded-lg shadow-lg w-full h-auto mb-6">
-                    <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdUFxIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f155ee857446c5b24ddffabab7af1d49ebd5852e/fixmate-pro.png" alt="Fix Mate Pro Logo" class="h-24 mx-auto">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-choose-us" class="py-20 bg-gray-50" data-aos="fade-up">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center primary-color mb-12">Why Choose FixMate PRO?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                    <svg class="w-16 h-16 primary-color mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Expert Technicians</h3>
-                    <p class="text-center text-gray-600">Certified professionals for all appliance repairs.</p>
-                </div>
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                    <svg class="w-16 h-16 primary-color mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Fast and Reliable</h3>
-                    <p class="text-center text-gray-600">Same-day service to get you up and running.</p>
-                </div>
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                    <svg class="w-16 h-16 primary-color mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Satisfaction Guaranteed</h3>
-                    <p class="text-center text-gray-600">Comprehensive service warranty on all work.</p>
-                </div>
-                <div class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md transition-all duration-300 hover:shadow-lg">
-                    <svg class="w-16 h-16 primary-color mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                    </svg>
-                    <h3 class="text-xl font-semibold mb-2">Local Service</h3>
-                    <p class="text-center text-gray-600">Serving all areas of Las Vegas and Henderson.</p>
+                <div class="bg-white p-8 rounded-md shadow-lg flex flex-col justify-between h-screen">
+                    <div class="flex-grow">
+                        <div class="mb-4 flex justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 primary-color" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l1.5 1.5a3.5 3.5 0 11-4.9 0L2 11V6a2 2 0 012-2h2a2 2 0 012 2v5zm5 5V7a2 2 0 012-2h4a2 2 0 012 2v9h2a2 2 0 012 2v2H7v-2a2 2 0 012-2h2zm4-2h1a2 2 0 100-4h-1v4zm-5 0H8a2 2 0 100-4h1v4zm8 0h1a2 2 0 100-4h-1v4zm-4-2h1v-4h-1v4zm0 0v-4h-1v4h1z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-2">Air Conditioning Systems & Repair</h3>
+                        <p class="mb-4">At FixMATE PRO, we offer expert air conditioning repair and replacement services in Utah to ensure you stay cool all summer long.</p>
+                        <p class="mb-8">Get quick service!</p>
+                    </div>
+                    <a href="#contact" class="bg-red-600 text-white px-6 py-3 rounded-md text-lg font-bold hover:bg-red-700 flex items-center justify-center mx-auto mt-auto">
+                        Book service call
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20 bg-gray-100" data-aos="fade-up">
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 relative flex justify-center">
+                <div class="phone-frame relative">
+                    <img src="your-image-url-here.jpg" alt="FixMATE PRO Team" class="rounded-md shadow-lg w-full h-auto">
+                    <div class="phone-notch absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-black rounded-b-md"></div>
+                    <div class="phone-sides absolute top-4 left-0 right-0 bottom-0 bg-transparent rounded-lg"></div>
+                    <div class="phone-bottom absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-4 bg-black rounded-t-md"></div>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-5xl font-bold mb-4">Why Choose FixMATE PRO?</h2>
+                <p class="text-lg md:text-xl mb-6">Because of our small and lean business model, we offer some of the most competitive prices in the area. Low overhead is passed directly to you.</p>
+                <ul class="space-y-4 text-left">
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-primary-color mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <div>
+                            <p class="font-bold text-lg">Proven Customer Satisfaction</p>
+                            <p class="text-gray-700">For over 28 years, customers have trusted our local HVAC experts to keep their homes comfortable year-round.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-primary-color mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0h-8m-2 0h8m0 0V4m0 8v8m0 0h-8m0 0H4m16 0h-4" />
+                        </svg>
+                        <div>
+                            <p class="font-bold text-lg">Where Quality Meets Savings</p>
+                            <p class="text-gray-700">Discover how our local HVAC company can help you save 20% to 30% on your home comfort needs.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="h-6 w-6 text-primary-color mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11V3a1 1 0 00-1-1h-3a1 1 0 00-1 1v3a1 1 0 00-1 1H7a1 1 0 00-1 1v2a1 1 0 001 1h3a1 1 0 001 1v3a1 1 0 001 1h2a1 1 0 001 1h3a1 1 0 001-1V12h-2z" />
+                        </svg>
+                        <div>
+                            <p class="font-bold text-lg">Fast Service and Delivery</p>
+                            <p class="text-gray-700">Swift and reliable furnace and A/C services for local homeowners.</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="text-xl text-red-600 font-bold mt-6">Call us at (725) 292-4422</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const stickySection = document.getElementById('sticky-section');
+            const heroSection = document.querySelector('section');
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            
+            if (heroBottom <= 0) {
+                stickySection.classList.remove('hidden');
+            } else {
+                stickySection.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <section class="bg-gray-50 py-16">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold primary-color">Our Services</h2>
-            <p class="mt-6 text-lg">At FixMate PRO, we provide a wide range of appliance repair services to meet your needs.</p>
-            <div class="mt-12">
-                <h3 class="text-2xl font-semibold">Repair your dryer</h3>
+            <div class="mb-8">
+                <div class="flex justify-center mb-4">
+                    <svg class="h-10 w-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.683h4.917a1 1 0 01.577 1.817l-3.98 2.896 1.518 4.683a1 1 0 01-1.54 1.118L10 14.347l-3.963 2.777a1 1 0 01-1.54-1.118l1.518-4.683-3.98-2.896a1 1 0 01.577-1.817h4.917L9.049 2.927z" />
+                    </svg>
+                    <svg class="h-10 w-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.683h4.917a1 1 0 01.577 1.817l-3.98 2.896 1.518 4.683a1 1 0 01-1.54 1.118L10 14.347l-3.963 2.777a1 1 0 01-1.54-1.118l1.518-4.683-3.98-2.896a1 1 0 01.577-1.817h4.917L9.049 2.927z" />
+                    </svg>
+                    <svg class="h-10 w-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.683h4.917a1 1 0 01.577 1.817l-3.98 2.896 1.518 4.683a1 1 0 01-1.54 1.118L10 14.347l-3.963 2.777a1 1 0 01-1.54-1.118l1.518-4.683-3.98-2.896a1 1 0 01.577-1.817h4.917L9.049 2.927z" />
+                    </svg>
+                    <svg class="h-10 w-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.683h4.917a1 1 0 01.577 1.817l-3.98 2.896 1.518 4.683a1 1 0 01-1.54 1.118L10 14.347l-3.963 2.777a1 1 0 01-1.54-1.118l1.518-4.683-3.98-2.896a1 1 0 01.577-1.817h4.917L9.049 2.927z" />
+                    </svg>
+                    <svg class="h-10 w-10 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927a1 1 0 011.902 0l1.518 4.683h4.917a1 1 0 01.577 1.817l-3.98 2.896 1.518 4.683a1 1 0 01-1.54 1.118L10 14.347l-3.963 2.777a1 1 0 01-1.54-1.118l1.518-4.683-3.98-2.896a1 1 0 01.577-1.817h4.917L9.049 2.927z" />
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">From Happy Customers to Glowing Reviews - See Why We're Utah's Choice</h2>
+                <p class="text-lg md:text-xl mb-12">Over 117 (and counting) 5-Star Google Reviews Prove Our Commitment to Quality Service, and with Over 28 Years of Trusted Experience, We Know How To Exceed Expectations.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="testimonials" class="py-20" data-aos="fade-up">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold primary-color">Hear From Our Satisfied Customers</h2>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p>Professional, courteous, and thorough. The technician from FixMate PRO explained everything clearly and had my dishwasher running like new. Their service is top-notch and prices are very reasonable.</p>
-                    <p class="mt-6 font-semibold">Linda G., Green Valley</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p>I've used FixMate PRO for both my washer and dryer issues, and they've been fantastic each time. Quick to respond, fair pricing, and exceptional service. It's a relief to have a reliable appliance repair service in the area!</p>
-                    <p class="mt-6 font-semibold">Samantha T., Henderson</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p>I was really impressed with the level of service from FixMates. They repaired my microwave quickly and at a fair price. Their staff is friendly and knowledgeable, which made the whole process smooth and stress-free.</p>
-                    <p class="mt-6 font-semibold">Kevin S., Las Vegas</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="py-20 bg-gray-100" data-aos="fade-up">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold primary-color">Tips & Tricks for Your Home Appliances</h2>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Appliance Repair Near Me: Your Go-To Solution in Las Vegas</h3>
-                    <p class="mt-4 text-gray-600">3 months ago</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Dishwasher Do's and Don'ts: Enhancing Performance and Longevity</h3>
-                    <p class="mt-4 text-gray-600">5 months ago</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Laundry Day Revolution: Innovative Hacks for Your Washer and Dryer</h3>
-                    <p class="mt-4 text-gray-600">5 months ago</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold">Maximizing Efficiency: Energy-Saving Tips for Your Refrigerator and Freezer</h3>
-                    <p class="mt-4 text-gray-600">7 months ago</p>
+            <div class="relative mx-auto" style="width: 80vw;">
+                <div class="overflow-hidden relative">
+                    <div class="flex transition-transform ease-in-out duration-500" id="carousel-items">
+                        <div class="carousel-item carousel-inactive w-full bg-gray-200 p-8 rounded-lg shadow-lg transform mx-4">
+                            <div class="flex flex-col items-center">
+                                <div class="mb-4">
+                                    <svg class="h-16 w-16 text-gray-400 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                                    </svg>
+                                </div>
+                                <div class="review-text-container">
+                                    <p class="review-text text-xl mb-8">Ken told me a new system would be $7800. That’s a $4000 savings. Then it ended up just to be my capacitor which was $240. I am always going to call FixMATE PRO from here on out.</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto text-center">
+                                <p class="text-xl text-gray-600">Sue Noorda</p>
+                                <p class="text-xl text-gray-600">A/C Repair in Bountiful</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-active w-full bg-a3d8f4 p-8 rounded-lg shadow-lg transform mx-4">
+                            <div class="flex flex-col items-center">
+                                <div class="mb-4">
+                                    <svg class="h-16 w-16 text-gray-400 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                                    </svg>
+                                </div>
+                                <div class="review-text-container">
+                                    <p class="review-text text-xl mb-8">They are so amazing!! They came in and tuned up our furnace for way cheaper than other companies tried to charge us and didn't try to tell us we needed to replace our furnace.</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto text-center">
+                                <p class="text-xl text-gray-600">Lone Wolf0823s</p>
+                                <p class="text-xl text-gray-600">Furnace tuneup in North Salt Lake</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-inactive w-full bg-gray-200 p-8 rounded-lg shadow-lg transform mx-4">
+                            <div class="flex flex-col items-center">
+                                <div class="mb-4">
+                                    <svg class="h-16 w-16 text-gray-400 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                                    </svg>
+                                </div>
+                                <div class="review-text-container">
+                                    <p class="review-text text-xl mb-8">Furnace blower didn’t work. Technician came out and quickly diagnosed and fixed the problem. Super happy and would definitely recommend to anyone who needs A/C and/or furnace work done.</p>
+                                </div>
+                            </div>
+                            <div class="mt-auto text-center">
+                                <p class="text-xl text-gray-600">Michael Buchanan</p>
+                                <p class="text-xl text-gray-600">Furnace blower repaired in Centerville</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-button left" onclick="prevSlide()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="carousel-button right" onclick="nextSlide()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -186,6 +388,32 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        let currentSlide = 1;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('carousel-active', 'carousel-inactive');
+                if (i === index) {
+                    slide.classList.add('carousel-active');
+                } else {
+                    slide.classList.add('carousel-inactive');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
     </script>
 </body>
 </html>
