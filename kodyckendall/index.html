@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Rocket Pitch Deck</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            height: 100%;
+            background-color: #f0f0f0;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pitch-deck-container {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            padding-bottom: 70px; /* Space for navigation */
+        }
+        .pitch-deck {
+            width: 100%;
+            height: 450px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+        }
+        .slide-content-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .slide-content-wrapper.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav-button {
+            background-color: #4a4a4a;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav-button:hover {
+            background-color: #5a5a5a;
+        }
+        .page-indicator {
+            font-size: 14px;
+            color: #333333;
+        }
+        .footer-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4a4a4a;
+            color: white;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .footer-logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .footer-text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .pitch-deck {
+                height: 350px;
+                padding: 10px;
+            }
+            .logo {
+                width: 60px;
+            }
+            .nav-button {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            .page-indicator {
+                font-size: 12px;
+            }
+            .footer-logo {
+                width: 30px;
+            }
+            .footer-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pitch-deck-container mx-auto">
+        <!-- Kody's Bio Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/1zrjk71ad5vhbgvid722i00ww48p" alt="Kody Kendall" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h1 class="text-2xl font-bold mb-2">Kody Kendall</h1>
+                    <p class="text-gray-700 leading-relaxed">
+                        I love building things. I've been building websites, games, and programming since I was in 4th grade. I won an award for typing 120 wpm as a fourth grader in my elementary school. I completed the University of Utah's Computer Science program in just three years while juggling a startup gig that got acquired 🎓🚀. After that, I joined a startup in Park City, diving into the world of one-time pad encryption systems 🕵️‍♂️, essential for corporate clients with company planes flying over hostile foreign airspace. When funding dried up, I teamed up with my Dad in his HVAC business, stepping in as head of growth. While doing this, I also finished a one-year master's degree from the University of Utah - the Master's of Business Creation 🎓📈. We doubled the company's size by creating our own marketing and sales software system 💪💼.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        Using that experience, I launched Field Rocket, an AI-powered marketing and sales tool specifically for small and medium-sized businesses, particularly residential contractors 🚀🏡. I just moved from Salt Lake City to San Francisco to join the AI revolution that's happening.
+                    </p>
+                </div>
+            </div>
+        </div>    
+        <div class="pitch-deck">
+            <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="logo w-20 sm:w-16 md:w-12">
+            <div class="slide-content-wrapper active" id="slideWrapper">
+                <!-- Slide content will be injected here -->
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="nav-button" id="prevButton">←</button>
+            <span class="page-indicator" id="pageIndicator"></span>
+            <button class="nav-button" id="nextButton">→</button>
+        </div>
+    </div>
+    <div class="footer-banner">
+        <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="footer-logo">
+        <span class="footer-text">Built with Field Rocket</span>
+    </div>
+
+    <script>
+        const slides = [
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl font-bold mb-4">Field Rocket</div>
+                <div class="text-gray-800 text-2xl mb-2">Building Custom Marketing & Software Solutions for Residential Contractors using AI</div>
+                <div class="text-gray-800 text-lg">Kody Kendall</div>
+                <div class="text-gray-800 text-lg">Founder & CEO</div>
+                <div class="text-gray-800 text-lg">07/11/2024</div>
+                <div class="text-gray-800 text-lg">kody@fieldrocket.us</div>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Problem Statement</div>
+                <div class="text-gray-800 text-2xl mb-2">Challenges Faced by Residential Contractors</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>High cost of traditional marketing agencies.</li>
+                    <li>Difficulty in self-promotion due to lack of expertise and time.</li>
+                    <li>Inefficient manual processes for scheduling, invoicing, and CRM.</li>
+                    <li>Missed opportunities in generating and distributing marketing content.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Solution</div>
+                <div class="text-gray-800 text-2xl mb-2">Field Rocket: Comprehensive AI-Driven Platform</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Tool to create custom websites, custom web-app functionali , and  AI generated content showcasing contractor work, pricing, and success stories.</li>
+                    <li>Tools for scheduling, invoicing, CRM, payments, text messaging, estimating, and picture uploading.</li>
+                    <li>Streamlined processes and automation to save time and reduce costs.</li>
+                    <li>Easy-to-use platform designed specifically for residential contractors.</li>
+                </ul>
+            </div>`,
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl font-bold mb-4">An example of our rapid marketing/prototype tool:</div>
+                <div class="text-gray-800 text-2xl mb-2">This site was built in 5 mins with Field Rocket's AI tool for <a href="https://2-tile.com" class="text-blue-500 underline">2-tile</a>:</div>
+                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/blzin72bo02yzswnlyl2ea23m1yw" alt="Field Rocket AI Tool Example" class="mx-auto w-80 h-auto border border-gray-300 shadow-lg">
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Market Opportunity</div>
+                <div class="text-gray-800 text-2xl mb-2">Large and Growing Market</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Approximately 6 million residential contractors in North America.</li>
+                    <li>Increasing demand for affordable and effective marketing solutions.</li>
+                    <li>Potential to capture a significant share of the market with our unique AI-driven approach.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Business Model</div>
+                <div class="text-gray-800 text-2xl mb-2">Flexible Pricing Plans</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Freemium: Basic tools for scheduling, invoicing, estimates, and pictures.</li>
+                    <li>$20/month: App + direct support through text/email.</li>
+                    <li>$45/month: App + website.</li>
+                    <li>$100/month: App, website, phone calls + 2-way SMS.</li>
+                    <li>$250/month: High-tier support, custom integration & development.</li>
+                    <li>$250/month: Growth package - grow your leads & revenue.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Traction</div>
+                <div class="text-gray-800 text-2xl mb-2">Key Milestones and Achievements</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Achieved $3,500 MRR in June 2024, with a goal of $10K MRR by December 2024.</li>
+                    <li>27 customers with a median spend of $100/month.</li>
+                    <li>Successful marketing strategies include cold calling, warm referrals, YouTube comments, and Google PPC ads.</li>
+                    <li>Positive customer feedback on cost-effective marketing and ease of use.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Technology</div>
+                <div class="text-gray-800 text-2xl mb-2">Advanced AI and Seamless Integrations</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Multimodal AI models for content generation.</li>
+                    <li>Integration with QuickBooks for seamless financial management.</li>
+                    <li>SMS integration through Twilio for efficient communication.</li>
+                    <li>Upcoming WordPress API integration for enhanced website management.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Go-to-Market Strategy</div>
+                <div class="text-gray-800 text-2xl mb-2">Strategic Sales and Marketing Initiatives</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Targeted cold calling and warm referrals to generate leads.</li>
+                    <li>Leveraging YouTube and Google PPC ads for broader reach.</li>
+                    <li>Drip campaigns focused on upselling to higher-tier packages.</li>
+                    <li>Personalized onboarding and support to ensure customer success.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Competitive Advantage</div>
+                <div class="text-gray-800 text-2xl mb-2">Why Field Rocket Stands Out</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>Specialized focus on residential contractors.</li>
+                    <li>Comprehensive suite of tools addressing key pain points.</li>
+                    <li>Cost-effective AI-driven marketing solutions.</li>
+                    <li>Proven track record of customer satisfaction and growth.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl font-bold mb-4">Team</div>
+                <div class="text-gray-800 text-2xl mb-2">Our Dedicated Team</div>
+                <ul class="text-gray-800 text-lg list-disc list-outside pl-5 mb-4">
+                    <li>[Your Name], Founder & CEO: Expertise in computer science and business creation.</li>
+                    <li>Experienced support and development team committed to customer success.</li>
+                </ul>
+            </div>`,
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl font-bold mb-4">Financial Projections</div>
+            </div>`
+        ];
+
+        let currentSlide = 0;
+
+        const slideWrapper = document.getElementById('slideWrapper');
+        const pageIndicator = document.getElementById('pageIndicator');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function updateSlide() {
+            slideWrapper.classList.remove('active');
+            
+            setTimeout(() => {
+                slideWrapper.innerHTML = slides[currentSlide];
+                pageIndicator.textContent = `${currentSlide + 1}/${slides.length}`;
+                
+                slideWrapper.classList.add('active');
+            }, 500);
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+
+        updateSlide();
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
