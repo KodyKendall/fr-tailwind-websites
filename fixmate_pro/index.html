@@ -117,6 +117,188 @@
         .review-text {
             max-width: 70%;
         }
+        .post-card {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .post-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .post-image {
+            flex-grow: 1;
+            background-size: cover;
+            background-position: center;
+        }
+        .post-content {
+            padding: 20px;
+        }
+        .post-date {
+            display: inline-block;
+            background-color: #2596be;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .post-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .post-link {
+            display: flex;
+            align-items: center;
+            color: #2596be;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: text-decoration 0.3s ease-in-out;
+        }
+
+        .post-card:hover .post-link {
+            text-decoration: underline;
+        }
+
+        .indicator-active {
+            background-color: #0000ff; /* Blue color for active indicator */
+        }
+        .indicator-inactive {
+            background-color: #d3d3d3; /* Gray color for inactive indicators */
+        }
+
+        .more-posts-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e60000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .more-posts-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .more-posts-btn svg {
+            margin-left: 8px; /* Adjust the spacing as needed */
+        }
+
+        .contact-section {
+            background-color: #f3f4f6; /* Light gray background */
+            padding: 2rem 0;
+        }
+
+        .contact-section .contact-info {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-section .contact-info h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section .contact-info p {
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section .contact-info .cta-button {
+            background-color: #e60000;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section .contact-info .cta-button:hover {
+            background-color: #cc0000;
+        }
+
+        .contact-section .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.375rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section .contact-form h3 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-section .contact-form form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .contact-section .contact-form form .form-group label {
+            display: block;
+            font-weight: medium;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section .contact-form form .form-group input,
+        .contact-section .contact-form form .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-section .contact-form form .form-group input:focus,
+        .contact-section .contact-form form .form-group textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+
+        .contact-section .contact-form form .form-group textarea {
+            resize: vertical;
+        }
+
+        .contact-section .contact-form form .form-group .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-section .contact-form form .form-group .checkbox-group input {
+            margin-right: 0.5rem;
+        }
+
+        .contact-section .contact-form form .form-group .checkbox-group a {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+
+        .contact-section .contact-form form .form-group .submit-button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #e60000;
+            color: white;
+            border: none;
+            border-radius: 0.375rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section .contact-form form .form-group .submit-button:hover {
+            background-color: #cc0000;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -327,8 +509,8 @@
                                 </div>
                             </div>
                             <div class="mt-auto text-center">
-                                <p class="text-xl text-gray-600">Sue Noorda</p>
-                                <p class="text-xl text-gray-600">A/C Repair in Bountiful</p>
+                                <p class="text-sm text-gray-600">Sue Noorda</p>
+                                <p class="text-sm text-gray-600">A/C Repair in Bountiful</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-active w-full bg-a3d8f4 p-8 rounded-lg shadow-lg transform mx-4">
@@ -343,8 +525,8 @@
                                 </div>
                             </div>
                             <div class="mt-auto text-center">
-                                <p class="text-xl text-gray-600">Lone Wolf0823s</p>
-                                <p class="text-xl text-gray-600">Furnace tuneup in North Salt Lake</p>
+                                <p class="text-sm text-gray-600">Lone Wolf0823s</p>
+                                <p class="text-sm text-gray-600">Furnace tuneup in North Salt Lake</p>
                             </div>
                         </div>
                         <div class="carousel-item carousel-inactive w-full bg-gray-200 p-8 rounded-lg shadow-lg transform mx-4">
@@ -359,8 +541,8 @@
                                 </div>
                             </div>
                             <div class="mt-auto text-center">
-                                <p class="text-xl text-gray-600">Michael Buchanan</p>
-                                <p class="text-xl text-gray-600">Furnace blower repaired in Centerville</p>
+                                <p class="text-sm text-gray-600">Michael Buchanan</p>
+                                <p class="text-sm text-gray-600">Furnace blower repaired in Centerville</p>
                             </div>
                         </div>
                     </div>
@@ -375,9 +557,121 @@
                         </svg>
                     </button>
                 </div>
+                <div id="carousel-indicators" class="flex justify-center mt-4">
+                    <span class="indicator w-3 h-3 bg-gray-400 rounded-full mx-1"></span>
+                    <span class="indicator w-3 h-3 bg-gray-400 rounded-full mx-1"></span>
+                    <span class="indicator w-3 h-3 bg-gray-400 rounded-full mx-1"></span>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-bold text-center mb-8">Furnace and A/C Tips</h2>
+            <p class="text-lg md:text-xl text-center mb-12">Keeping your furnace and air conditioner in top shape is essential for maintaining a comfortable home and avoiding costly repairs. Here are some tips to help you keep your HVAC system running smoothly.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="post-card bg-white rounded-lg shadow-lg transform hover:translate-y-[-10px] transition-transform duration-300">
+                    <div class="post-image" style="background-image: url('your-image-url-here-1.jpg');"></div>
+                    <div class="post-content">
+                        <div class="post-date">May 13, 2024</div>
+                        <div class="post-title">Affordable HVAC Gas Pipe Installs | Perform Heating & Cooling</div>
+                        <a href="#" class="post-link">Read article 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-card bg-white rounded-lg shadow-lg transform hover:translate-y-[-10px] transition-transform duration-300">
+                    <div class="post-image" style="background-image: url('your-image-url-here-2.jpg');"></div>
+                    <div class="post-content">
+                        <div class="post-date">March 22, 2024</div>
+                        <div class="post-title">Upgrade to an Energy Efficient HVAC System</div>
+                        <a href="#" class="post-link">Read article 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-card bg-white rounded-lg shadow-lg transform hover:translate-y-[-10px] transition-transform duration-300">
+                    <div class="post-image" style="background-image: url('your-image-url-here-3.jpg');"></div>
+                    <div class="post-content">
+                        <div class="post-date">May 9, 2024</div>
+                        <div class="post-title">Heat Pump Installs in Bountiful, UT | Energy Rebates by Perform Heating</div>
+                        <a href="#" class="post-link">Read article 
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="more-posts-btn">More Posts 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                <div class="bg-red-600 text-white py-2 px-4 rounded-md mb-4 inline-block">
+                    <h2 class="text-3xl font-bold">Call (801) 243-0191</h2>
+                </div>
+                <h2 class="text-4xl font-bold mb-4">Ready For Cool Savings And 5-Star Service?</h2>
+                <p class="text-lg mb-4">Get back to comfort with our prompt furnace repair and replacement, as well as AC services. Reach out to us by giving us a call or utilizing our online form.</p>
+                <div class="w-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509455!2d144.95373531562044!3d-37.81620997975192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d9a8c9f0c043!2sPerform%20Heating%20and%20Cooling!5e0!3m2!1sen!2sus!4v1648470813730!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-white p-8 rounded-md shadow-lg md:ml-16">
+                <h3 class="text-3xl font-bold mb-4">Or Request Online</h3>
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700">First</label>
+                            <input type="text" id="first-name" name="first-name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" required>
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last</label>
+                            <input type="text" id="last-name" name="last-name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" required>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label for="comments" class="block text-sm font-medium text-gray-700">Comments</label>
+                        <textarea id="comments" name="comments" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50" required></textarea>
+                    </div>
+                    <div class="mt-4">
+                        <label for="privacy" class="block text-sm font-medium text-gray-700">
+                            <input type="checkbox" id="privacy" name="privacy" class="mr-2" required>
+                            I agree to the <a href="#" class="text-indigo-600">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="mt-4">
+                        <label for="captcha" class="block text-sm font-medium text-gray-700">CAPTCHA</label>
+                        <!-- Add your CAPTCHA here -->
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-md font-bold hover:bg-red-700">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>    
 
     <footer class="bg-primary text-white py-6">
         <div class="container mx-auto text-center">
@@ -391,6 +685,7 @@
 
         let currentSlide = 1;
         const slides = document.querySelectorAll('.carousel-item');
+        const indicators = document.querySelectorAll('.indicator');
 
         function showSlide(index) {
             slides.forEach((slide, i) => {
@@ -399,6 +694,15 @@
                     slide.classList.add('carousel-active');
                 } else {
                     slide.classList.add('carousel-inactive');
+                }
+            });
+
+            indicators.forEach((indicator, i) => {
+                indicator.classList.remove('indicator-active', 'indicator-inactive');
+                if (i === index) {
+                    indicator.classList.add('indicator-active');
+                } else {
+                    indicator.classList.add('indicator-inactive');
                 }
             });
         }
@@ -412,6 +716,13 @@
             currentSlide = (currentSlide - 1 + slides.length) % slides.length;
             showSlide(currentSlide);
         }
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
 
         showSlide(currentSlide);
     </script>
