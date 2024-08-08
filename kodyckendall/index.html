@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Rocket Pitch Deck</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex justify-center items-center">
+    <div class="w-full max-w-4xl px-4 py-8">
+        <!-- Kody's Bio Section -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/1zrjk71ad5vhbgvid722i00ww48p" alt="Kody Kendall" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div class="mb-10">
+                    <h1 class="text-2xl font-bold mb-2">Kody Kendall</h1>
+                    <p class="text-gray-700 leading-relaxed">
+                        I love building things. I've been building websites, games, and programming since I was in 4th grade. I won an award for typing 120 wpm as a fourth grader in my elementary school. I completed the University of Utah's Computer Science program in just three years while juggling a startup gig that got acquired 🎓🚀. 
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        After that, I joined a startup in Park City, diving into the world of one-time pad encryption systems 🕵️‍♂️, essential for corporate clients with company planes flying over hostile foreign airspace. When funding dried up, I teamed up with my Dad in his HVAC business, stepping in as head of growth. (while also doing the Master's of Business Creation degree from the University of Utah🎓📈). We doubled the company's size by creating our own marketing and sales software system 💪💼, and then sold the company for $1M.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        Using that experience, I launched <a class="text-blue-500 underline"href="https://fieldrocket.us">Field Rocket</a>, an AI-powered marketing and sales tool specifically for small and medium-sized businesses, but with a focus on residential contractors 🚀🏡.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        I just moved from Salt Lake City to San Francisco 🌉 to continue building Field Rocket, and be in the <a class="text-blue-500 underline" href="https://www.amid.ai/lab">Amid AI accelerator</a>
+                    </p>
+                </div>
+            </div>
+        </div>    
+        <!-- <div class="bg-white rounded-lg shadow-lg p-6 relative h-96 mb-20">
+            <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="absolute top-4 left-4 w-20 h-auto">
+            <div class="w-full h-full flex flex-col justify-center items-center opacity-0 transform translate-y-4 transition-all duration-500 ease-in-out" id="slideWrapper">
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+            <button class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600" id="prevButton">←</button>
+            <span class="text-sm text-gray-600" id="pageIndicator"></span>
+            <button class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600" id="nextButton">→</button>
+        </div>
+    </div> -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-700 text-white py-4 flex flex-col justify-center items-center">
+        <div class="flex items-center mb-1">
+            <img src="https://app.fieldrocket.us/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbWNkIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--20600e8719c5434763a3421a2e79c95aa8e25bd9/field-rocket-logo%20(1).png" alt="Field Rocket Logo" class="w-10 h-auto mr-2">
+            <span class="text-lg font-bold">Built with Field Rocket</span>
+        </div>
+        <span class="text-sm">Designed and written with FieldRocket.AI</span>
+    </div>
+
+    <script>
+        const slides = [
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Field Rocket</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Building Custom Marketing & Software Solutions for Residential Contractors using AI</div>
+                <div class="text-gray-800 text-lg sm:text-base">Kody Kendall</div>
+                <div class="text-gray-800 text-lg sm:text-base">Founder & CEO</div>
+                <div class="text-gray-800 text-lg sm:text-base">07/11/2024</div>
+                <div class="text-gray-800 text-lg sm:text-base">kody@fieldrocket.us</div>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Problem Statement</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Challenges Faced by Residential Contractors</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>High cost of traditional marketing agencies.</li>
+                    <li>Difficulty in self-promotion due to lack of expertise and time.</li>
+                    <li>Inefficient manual processes for scheduling, invoicing, and CRM.</li>
+                    <li>Missed opportunities in generating and distributing marketing content.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Solution</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Field Rocket: Comprehensive AI-Driven Platform</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Tool to create custom websites, custom web-app functionali , and  AI generated content showcasing contractor work, pricing, and success stories.</li>
+                    <li>Tools for scheduling, invoicing, CRM, payments, text messaging, estimating, and picture uploading.</li>
+                    <li>Streamlined processes and automation to save time and reduce costs.</li>
+                    <li>Easy-to-use platform designed specifically for residential contractors.</li>
+                </ul>
+            </div>`,
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">An example of our rapid marketing/prototype tool:</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">This site was built in 5 mins with Field Rocket's AI tool for <a href="https://2-tile.com" class="text-blue-500 underline">2-tile</a>:</div>
+                <img src="https://service-jobs-images.s3.us-east-2.amazonaws.com/blzin72bo02yzswnlyl2ea23m1yw" alt="Field Rocket AI Tool Example" class="mx-auto w-80 h-auto border border-gray-300 shadow-lg">
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Market Opportunity</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Large and Growing Market</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Approximately 6 million residential contractors in North America.</li>
+                    <li>Increasing demand for affordable and effective marketing solutions.</li>
+                    <li>Potential to capture a significant share of the market with our unique AI-driven approach.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Business Model</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Flexible Pricing Plans</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Freemium: Basic tools for scheduling, invoicing, estimates, and pictures.</li>
+                    <li>$20/month: App + direct support through text/email.</li>
+                    <li>$45/month: App + website.</li>
+                    <li>$100/month: App, website, phone calls + 2-way SMS.</li>
+                    <li>$250/month: High-tier support, custom integration & development.</li>
+                    <li>$250/month: Growth package - grow your leads & revenue.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Traction</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Key Milestones and Achievements</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Achieved $3,500 MRR in June 2024, with a goal of $10K MRR by December 2024.</li>
+                    <li>27 customers with a median spend of $100/month.</li>
+                    <li>Successful marketing strategies include cold calling, warm referrals, YouTube comments, and Google PPC ads.</li>
+                    <li>Positive customer feedback on cost-effective marketing and ease of use.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Technology</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Advanced AI and Seamless Integrations</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Multimodal AI models for content generation.</li>
+                    <li>Integration with QuickBooks for seamless financial management.</li>
+                    <li>SMS integration through Twilio for efficient communication.</li>
+                    <li>Upcoming WordPress API integration for enhanced website management.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Go-to-Market Strategy</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Strategic Sales and Marketing Initiatives</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Targeted cold calling and warm referrals to generate leads.</li>
+                    <li>Leveraging YouTube and Google PPC ads for broader reach.</li>
+                    <li>Drip campaigns focused on upselling to higher-tier packages.</li>
+                    <li>Personalized onboarding and support to ensure customer success.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Competitive Advantage</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Why Field Rocket Stands Out</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>Specialized focus on residential contractors.</li>
+                    <li>Comprehensive suite of tools addressing key pain points.</li>
+                    <li>Cost-effective AI-driven marketing solutions.</li>
+                    <li>Proven track record of customer satisfaction and growth.</li>
+                </ul>
+            </div>`,
+            `<div class="text-left">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Team</div>
+                <div class="text-gray-800 text-2xl md:text-xl sm:text-lg mb-2">Our Dedicated Team</div>
+                <ul class="text-gray-800 text-lg sm:text-base list-disc list-outside pl-5 mb-4">
+                    <li>[Your Name], Founder & CEO: Expertise in computer science and business creation.</li>
+                    <li>Experienced support and development team committed to customer success.</li>
+                </ul>
+            </div>`,
+            `<div class="text-center">
+                <div class="text-red-500 text-4xl md:text-3xl sm:text-2xl font-bold mb-4">Financial Projections</div>
+            </div>`
+        ];
+
+        let currentSlide = 0;
+
+        const slideWrapper = document.getElementById('slideWrapper');
+        const pageIndicator = document.getElementById('pageIndicator');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function updateSlide() {
+            slideWrapper.classList.remove('active');
+            
+            setTimeout(() => {
+                slideWrapper.innerHTML = slides[currentSlide];
+                pageIndicator.textContent = `${currentSlide + 1}/${slides.length}`;
+                
+                slideWrapper.classList.add('active');
+            }, 500);
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlide();
+        }
+
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+
+        updateSlide();
+    </script>
+</body>
+</html>
